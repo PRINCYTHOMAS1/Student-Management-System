@@ -29,8 +29,9 @@ namespace StudentInformationSystem
                 MessageBox.Show("password doesnt match");
                 return ;
             }
-            Form5 registrationdetails=new Form5();
-            registrationdetails.Show();
+            MessageBox.Show("Login with your new password");
+            Form1 loginpage=new Form1();
+            loginpage.Show();
 
         }
         int loc = 10;
