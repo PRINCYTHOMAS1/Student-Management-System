@@ -1,0 +1,9 @@
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\bin\Debug\StudentInformationSystem.exe.config
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\bin\Debug\StudentInformationSystem.exe
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\bin\Debug\StudentInformationSystem.pdb
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.exe
+C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
