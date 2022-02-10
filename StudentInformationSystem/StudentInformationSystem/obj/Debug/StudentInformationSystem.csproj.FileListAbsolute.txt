@@ -21,3 +21,5 @@ C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSyste
 C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.CoreCompileInputs.cache
 C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.exe
 C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
+C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.Form2.resources
+C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.Form3.resources
