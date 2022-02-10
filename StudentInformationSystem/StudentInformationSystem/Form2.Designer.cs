@@ -79,19 +79,19 @@
             this.label1.Font = new System.Drawing.Font("MV Boli", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(27, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 28);
+            this.label1.Size = new System.Drawing.Size(222, 28);
             this.label1.TabIndex = 5;
-            this.label1.Text = "REGISTRATION FORM";
+            this.label1.Text = "RESET PASSWORD";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 182);
+            this.label2.Location = new System.Drawing.Point(12, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 21);
+            this.label2.Size = new System.Drawing.Size(206, 21);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Confirm Password";
+            this.label2.Text = "Confirm New Password";
             // 
             // label3
             // 
@@ -99,9 +99,9 @@
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(78, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 21);
+            this.label3.Size = new System.Drawing.Size(132, 21);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Password";
+            this.label3.Text = "New Password";
             // 
             // label4
             // 
