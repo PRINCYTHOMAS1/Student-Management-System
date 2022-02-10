@@ -67,7 +67,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(243, 295);
+            this.button1.Location = new System.Drawing.Point(223, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(222, 46);
             this.button1.TabIndex = 2;
@@ -86,7 +86,7 @@
             // 
             // Passwordtxtbox
             // 
-            this.Passwordtxtbox.Location = new System.Drawing.Point(267, 212);
+            this.Passwordtxtbox.Location = new System.Drawing.Point(267, 191);
             this.Passwordtxtbox.Name = "Passwordtxtbox";
             this.Passwordtxtbox.PasswordChar = '*';
             this.Passwordtxtbox.Size = new System.Drawing.Size(178, 20);
@@ -107,7 +107,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(147, 209);
+            this.label3.Location = new System.Drawing.Point(162, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 21);
             this.label3.TabIndex = 6;
@@ -128,7 +128,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(278, 238);
+            this.checkBox1.Location = new System.Drawing.Point(267, 227);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(143, 28);
             this.checkBox1.TabIndex = 8;
@@ -139,7 +139,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Myanmar Text", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(278, 261);
+            this.checkBox2.Location = new System.Drawing.Point(267, 250);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(141, 28);
             this.checkBox2.TabIndex = 9;

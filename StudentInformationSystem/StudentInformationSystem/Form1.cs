@@ -39,8 +39,8 @@ namespace StudentInformationSystem
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 RegistrationForm = new Form2();
-            RegistrationForm.Show();
+            Form2 forgotpasswordForm = new Form2();
+            forgotpasswordForm.Show();
         }
         int loc = 10;
         private void textBox1_TextChanged(object sender, EventArgs e)
