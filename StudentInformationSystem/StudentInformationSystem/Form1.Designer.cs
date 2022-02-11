@@ -1,6 +1,6 @@
 ﻿namespace StudentInformationSystem
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -67,9 +67,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(223, 274);
+            this.button1.Location = new System.Drawing.Point(151, 274);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 46);
+            this.button1.Size = new System.Drawing.Size(283, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Sign In";
             this.button1.UseVisualStyleBackColor = false;
@@ -77,7 +77,7 @@
             // 
             // useridtxtbox
             // 
-            this.useridtxtbox.Location = new System.Drawing.Point(267, 148);
+            this.useridtxtbox.Location = new System.Drawing.Point(256, 148);
             this.useridtxtbox.Name = "useridtxtbox";
             this.useridtxtbox.Size = new System.Drawing.Size(178, 20);
             this.useridtxtbox.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             // Passwordtxtbox
             // 
-            this.Passwordtxtbox.Location = new System.Drawing.Point(267, 191);
+            this.Passwordtxtbox.Location = new System.Drawing.Point(256, 191);
             this.Passwordtxtbox.Name = "Passwordtxtbox";
             this.Passwordtxtbox.PasswordChar = '*';
             this.Passwordtxtbox.Size = new System.Drawing.Size(178, 20);
@@ -97,7 +97,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(162, 148);
+            this.label2.Location = new System.Drawing.Point(147, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 21);
             this.label2.TabIndex = 5;
@@ -107,7 +107,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(162, 191);
+            this.label3.Location = new System.Drawing.Point(147, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 21);
             this.label3.TabIndex = 6;
@@ -128,7 +128,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(267, 227);
+            this.checkBox1.Location = new System.Drawing.Point(256, 216);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(143, 28);
             this.checkBox1.TabIndex = 8;
@@ -139,14 +139,14 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Myanmar Text", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(267, 250);
+            this.checkBox2.Location = new System.Drawing.Point(256, 240);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(141, 28);
             this.checkBox2.TabIndex = 9;
             this.checkBox2.Text = "Login as a teacher";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -162,8 +162,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "LoginForm";
+            this.Text = "LoginWindow";
             this.ResumeLayout(false);
             this.PerformLayout();
 

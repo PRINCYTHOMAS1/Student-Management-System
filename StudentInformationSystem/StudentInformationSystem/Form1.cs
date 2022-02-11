@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentInformationSystem
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -27,19 +27,19 @@ namespace StudentInformationSystem
                 MessageBox.Show("please select whether you want to login as a student or as a teacher");
             if(checkBox1.Checked==true)
             {
-                Form3 StudentView=new Form3();
+                StudentPortalForm StudentView=new StudentPortalForm();
                 StudentView.Show();
             }
             if(checkBox2.Checked==true)
             {
-                Form4 TeacherView=new Form4();
+                TeachersPortalForm TeacherView=new TeachersPortalForm();
                 TeacherView.Show();
             }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 forgotpasswordForm = new Form2();
+            ResetPasswordForm forgotpasswordForm = new ResetPasswordForm();
             forgotpasswordForm.Show();
         }
         int loc = 10;

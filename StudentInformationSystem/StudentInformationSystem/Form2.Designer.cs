@@ -1,6 +1,6 @@
 ﻿namespace StudentInformationSystem
 {
-    partial class Form2
+    partial class ResetPasswordForm
     {
         /// <summary>
         /// Required designer variable.
@@ -113,7 +113,7 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Enter your Email Id";
             // 
-            // Form2
+            // ResetPasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,8 +126,8 @@
             this.Controls.Add(this.passwordtxt);
             this.Controls.Add(this.passwordbtn);
             this.Controls.Add(this.emailidtxt);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "ResetPasswordForm";
+            this.Text = "ResetPasswordWindow";
             this.ResumeLayout(false);
             this.PerformLayout();
 

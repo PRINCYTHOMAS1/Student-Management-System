@@ -1,6 +1,6 @@
 ﻿namespace StudentInformationSystem
 {
-    partial class Form4
+    partial class TeachersPortalForm
     {
         /// <summary>
         /// Required designer variable.
@@ -247,7 +247,7 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "TEACHER\'S ID";
             // 
-            // Form4
+            // TeachersPortalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -272,8 +272,8 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.textBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "TeachersPortalForm";
+            this.Text = "TeachersPortalWindow";
             this.ResumeLayout(false);
             this.PerformLayout();
 

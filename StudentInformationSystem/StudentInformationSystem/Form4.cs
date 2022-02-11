@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentInformationSystem
 {
-    public partial class Form4 : Form
+    public partial class TeachersPortalForm : Form
     {
-        public Form4()
+        public TeachersPortalForm()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace StudentInformationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 addstudent=new Form5();
+            AddStudentForm addstudent=new AddStudentForm();
             addstudent.Show();
         }
         int loc = 10;

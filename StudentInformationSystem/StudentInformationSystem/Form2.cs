@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentInformationSystem
 {
-    public partial class Form2 : Form
+    public partial class ResetPasswordForm : Form
     {
-        public Form2()
+        public ResetPasswordForm()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace StudentInformationSystem
                 return ;
             }
             MessageBox.Show("Login with your new password");
-            Form1 loginpage=new Form1();
+            LoginForm loginpage=new LoginForm();
             loginpage.Show();
 
         }
