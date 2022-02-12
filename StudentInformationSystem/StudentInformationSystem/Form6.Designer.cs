@@ -1,6 +1,6 @@
 ﻿namespace StudentInformationSystem
 {
-    partial class Form6
+    partial class ViewStudentForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form6
+            // ViewStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form6";
-            this.Text = "Form6";
+            this.Name = "ViewStudentForm";
+            this.Text = "View student Window";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.ResumeLayout(false);
 

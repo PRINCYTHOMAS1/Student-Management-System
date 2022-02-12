@@ -24,12 +24,13 @@ namespace StudentInformationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddStudentForm addstudent=new AddStudentForm();
+            AddStudentForm addstudent = new AddStudentForm();
             addstudent.Show();
         }
-        int loc = 10;
         private void button2_Click(object sender, EventArgs e)
         {
+            ViewStudentForm editsudent= new ViewStudentForm();  
+            editsudent.Show();
         }
         private void button4_Click(object sender, EventArgs e)
         {
