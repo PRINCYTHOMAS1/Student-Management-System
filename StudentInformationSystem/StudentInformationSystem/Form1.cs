@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentInformationSystem.Services;
 
 namespace StudentInformationSystem
 {
@@ -19,22 +20,18 @@ namespace StudentInformationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(useridtxtbox.Text =="" || !useridtxtbox.Text.Contains("@gmail.com") || useridtxtbox.Text.Contains(" "))
+            if (useridtxtbox.Text == "" || !useridtxtbox.Text.Contains("@gmail.com") || useridtxtbox.Text.Contains(" "))
+            {
                 MessageBox.Show("Invalid user id try again");
+                return;
+            }
             if (Passwordtxtbox.Text == "")
+            {
                 MessageBox.Show("you forgot to enter password please enter a password");
-            if ((checkBox1.Checked == false && checkBox2.Checked == false)||(checkBox1.Checked == true && checkBox2.Checked == true))
-                MessageBox.Show("please select whether you want to login as a student or as a teacher");
-            if(checkBox1.Checked==true)
-            {
-                StudentPortalForm StudentView=new StudentPortalForm();
-                StudentView.Show();
+                return ;
             }
-            if(checkBox2.Checked==true)
-            {
-                TeachersPortalForm TeacherView=new TeachersPortalForm();
-                TeacherView.Show();
-            }
+            LoginClass loginobj = new LoginClass();
+            loginobj.GetById(useridtxtbox.Text, Passwordtxtbox.Text);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
