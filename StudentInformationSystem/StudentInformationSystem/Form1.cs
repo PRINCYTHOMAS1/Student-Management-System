@@ -31,7 +31,24 @@ namespace StudentInformationSystem
                 return ;
             }
             LoginClass loginobj = new LoginClass();
-            loginobj.GetById(useridtxtbox.Text, Passwordtxtbox.Text);
+            int value=loginobj.GetById(useridtxtbox.Text, Passwordtxtbox.Text);
+            if (value == 1)
+            {
+                StudentPortalForm studentportalform = new StudentPortalForm();
+                studentportalform.Show();
+            }
+            if (value == 2)
+            {
+                TeachersPortalForm teacherportal = new TeachersPortalForm();
+                teacherportal.Show();
+            }
+            if (value == 3)
+            {
+                AdminPortalForm adminportal= new AdminPortalForm();
+                adminportal.Show();
+            }
+            if (value == 0)
+                MessageBox.Show("Incorrect UserId or Password try again!!");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
