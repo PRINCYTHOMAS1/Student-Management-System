@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentInformationSystem.Services;
+using StudentInformationSystem.Models;
 
 namespace StudentInformationSystem
 {
@@ -30,12 +31,13 @@ namespace StudentInformationSystem
                 MessageBox.Show("you forgot to enter password please enter a password");
                 return ;
             }
+            string emailiddd = useridtxtbox.Text;
             LoginClass loginobj = new LoginClass();
             int value=loginobj.GetById(useridtxtbox.Text, Passwordtxtbox.Text);
             if (value == 1)
             {
                 StudentPortalForm studentportalform = new StudentPortalForm();
-                studentportalform.Show();
+                studentportalform.pass(useridtxtbox.Text);
             }
             if (value == 2)
             {
@@ -49,6 +51,11 @@ namespace StudentInformationSystem
             }
             if (value == 0)
                 MessageBox.Show("Incorrect UserId or Password try again!!");
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
