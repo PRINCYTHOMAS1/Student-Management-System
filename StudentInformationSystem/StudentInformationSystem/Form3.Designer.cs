@@ -151,7 +151,7 @@
             "S3",
             "S4"});
             this.comboBox1.Location = new System.Drawing.Point(126, 225);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(170, 21);
             this.comboBox1.TabIndex = 17;
@@ -160,7 +160,7 @@
             // 
             this.nametxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.nametxtbox.Location = new System.Drawing.Point(113, 67);
-            this.nametxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nametxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.nametxtbox.Name = "nametxtbox";
             this.nametxtbox.Size = new System.Drawing.Size(170, 20);
             this.nametxtbox.TabIndex = 18;
@@ -169,7 +169,7 @@
             // 
             this.RegNoTxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.RegNoTxtbox.Location = new System.Drawing.Point(113, 96);
-            this.RegNoTxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RegNoTxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.RegNoTxtbox.Name = "RegNoTxtbox";
             this.RegNoTxtbox.Size = new System.Drawing.Size(170, 20);
             this.RegNoTxtbox.TabIndex = 19;
@@ -178,7 +178,7 @@
             // 
             this.emailidtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.emailidtxtbox.Location = new System.Drawing.Point(113, 126);
-            this.emailidtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailidtxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.emailidtxtbox.Name = "emailidtxtbox";
             this.emailidtxtbox.Size = new System.Drawing.Size(170, 20);
             this.emailidtxtbox.TabIndex = 20;
@@ -187,7 +187,7 @@
             // 
             this.departmenttxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.departmenttxtbox.Location = new System.Drawing.Point(430, 60);
-            this.departmenttxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.departmenttxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.departmenttxtbox.Name = "departmenttxtbox";
             this.departmenttxtbox.Size = new System.Drawing.Size(159, 20);
             this.departmenttxtbox.TabIndex = 21;
@@ -196,17 +196,16 @@
             // 
             this.staffadvisortxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.staffadvisortxtbox.Location = new System.Drawing.Point(430, 119);
-            this.staffadvisortxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.staffadvisortxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.staffadvisortxtbox.Name = "staffadvisortxtbox";
             this.staffadvisortxtbox.Size = new System.Drawing.Size(159, 20);
             this.staffadvisortxtbox.TabIndex = 22;
-            this.staffadvisortxtbox.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox6.Location = new System.Drawing.Point(406, 258);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(175, 20);
             this.textBox6.TabIndex = 23;
@@ -248,7 +247,7 @@
             // 
             this.phnnotxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.phnnotxtbox.Location = new System.Drawing.Point(113, 156);
-            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.phnnotxtbox.Name = "phnnotxtbox";
             this.phnnotxtbox.Size = new System.Drawing.Size(170, 20);
             this.phnnotxtbox.TabIndex = 36;
@@ -268,7 +267,7 @@
             // 
             this.branchtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.branchtxtbox.Location = new System.Drawing.Point(430, 89);
-            this.branchtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.branchtxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.branchtxtbox.Name = "branchtxtbox";
             this.branchtxtbox.Size = new System.Drawing.Size(159, 20);
             this.branchtxtbox.TabIndex = 38;
@@ -288,7 +287,7 @@
             // 
             this.currentsemtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.currentsemtxtbox.Location = new System.Drawing.Point(430, 152);
-            this.currentsemtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.currentsemtxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.currentsemtxtbox.Name = "currentsemtxtbox";
             this.currentsemtxtbox.Size = new System.Drawing.Size(159, 20);
             this.currentsemtxtbox.TabIndex = 40;
@@ -310,7 +309,7 @@
             // 
             this.textBox7.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox7.Location = new System.Drawing.Point(126, 255);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(170, 20);
             this.textBox7.TabIndex = 42;
@@ -341,7 +340,7 @@
             // 
             this.textBox8.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox8.Location = new System.Drawing.Point(406, 321);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(170, 20);
             this.textBox8.TabIndex = 45;
@@ -350,7 +349,7 @@
             // 
             this.textBox12.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox12.Location = new System.Drawing.Point(406, 286);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(170, 20);
             this.textBox12.TabIndex = 46;
@@ -359,7 +358,7 @@
             // 
             this.textBox13.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox13.Location = new System.Drawing.Point(126, 325);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(170, 20);
             this.textBox13.TabIndex = 47;
@@ -368,7 +367,7 @@
             // 
             this.textBox14.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox14.Location = new System.Drawing.Point(126, 286);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(170, 20);
             this.textBox14.TabIndex = 48;
@@ -444,10 +443,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StudentPortalForm";
             this.Text = "StudentPortalWindow";
-            this.Load += new System.EventHandler(this.StudentPortalForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

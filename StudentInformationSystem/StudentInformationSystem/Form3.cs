@@ -14,38 +14,22 @@ namespace StudentInformationSystem
 {
     public partial class StudentPortalForm : Form
     {
-        public StudentPortalForm()
+        private readonly string _email;
+        private readonly StudentDetailsService _service;
+        public StudentPortalForm(string email)
         {
             InitializeComponent();
-            //StudentPortalForm_Load(object, EventArgs );
-            
+            _email = email;
+            _service = new StudentDetailsService();
+            var model = _service.GetByEmail(email);
+            nametxtbox.Text = model.StudentName;
+            RegNoTxtbox.Text = model.RegisterNumber;
+            emailidtxtbox.Text = model.Emailid;
+            phnnotxtbox.Text = model.PhoneNumber.ToString();
+            departmenttxtbox.Text = model.Department;
+            branchtxtbox.Text = model.Course;
+            staffadvisortxtbox.Text = model.StaffAdvisor;
+            currentsemtxtbox.Text = model.CurrentSemester.ToString();
         }
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        string password;
-        public void pass(string userid)
-        {
-            password=userid;
-        }
-       
-        private void StudentPortalForm_Load(object sender, EventArgs e)
-        {
-            
-            StudentPortalService obj = new StudentPortalService();
-            StudentDetailsModel model = new StudentDetailsModel();
-            model=obj.studentdetails(password);
-            StudentPortalForm form = new StudentPortalForm();
-            form.nametxtbox.Text = model.StudentName;
-            form.RegNoTxtbox.Text = model.RegisterNumber;
-            form.emailidtxtbox.Text = model.Emailid;
-            form.phnnotxtbox.Text = model.PhoneNumber.ToString();
-            form.departmenttxtbox.Text = model.Department;
-            form.branchtxtbox.Text = model.Course;
-            form.staffadvisortxtbox.Text = model.StaffAdvisor;
-            form.currentsemtxtbox.Text = model.CurrentSemester.ToString();
-        }
-       
     }
 }

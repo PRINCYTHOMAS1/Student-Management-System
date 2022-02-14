@@ -21,7 +21,7 @@ namespace StudentInformationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (useridtxtbox.Text == "" || !useridtxtbox.Text.Contains("@gmail.com") || useridtxtbox.Text.Contains(" "))
+            if (useridtxtbox.Text == "" || !useridtxtbox.Text.Contains("@") || useridtxtbox.Text.Contains(" "))
             {
                 MessageBox.Show("Invalid user id try again");
                 return;
@@ -31,33 +31,26 @@ namespace StudentInformationSystem
                 MessageBox.Show("you forgot to enter password please enter a password");
                 return ;
             }
-            string emailiddd = useridtxtbox.Text;
-            LoginClass loginobj = new LoginClass();
-            int value=loginobj.GetById(useridtxtbox.Text, Passwordtxtbox.Text);
-            if (value == 1)
+
+            string emailId = useridtxtbox.Text;
+            LoginClass service = new LoginClass();
+            Login value = service.GetByEmailAndPassword(useridtxtbox.Text, Passwordtxtbox.Text);
+            if (value.UserRole == "Student")
             {
-                StudentPortalForm studentportalform = new StudentPortalForm();
-                studentportalform.pass(useridtxtbox.Text);
+                StudentPortalForm studentportalform = new StudentPortalForm(emailId);
+                studentportalform.Show();
             }
-            if (value == 2)
+            if (value.UserRole=="Teacher")
             {
                 TeachersPortalForm teacherportal = new TeachersPortalForm();
                 teacherportal.Show();
             }
-            if (value == 3)
+            if (value.UserRole=="Admin")
             {
                 AdminPortalForm adminportal= new AdminPortalForm();
                 adminportal.Show();
             }
-            if (value == 0)
-                MessageBox.Show("Incorrect UserId or Password try again!!");
         }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ResetPasswordForm forgotpasswordForm = new ResetPasswordForm();

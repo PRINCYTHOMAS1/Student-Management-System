@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Nametxtbox = new System.Windows.Forms.TextBox();
+            this.regtextbox = new System.Windows.Forms.TextBox();
+            this.emailidtxtbox = new System.Windows.Forms.TextBox();
+            this.phonenumbertxtbox = new System.Windows.Forms.TextBox();
+            this.currentsemcomboBox = new System.Windows.Forms.ComboBox();
+            this.departmenttxtbox = new System.Windows.Forms.TextBox();
+            this.bracnchtxtbox = new System.Windows.Forms.TextBox();
+            this.staffadvisortxtbox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,95 +60,96 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "                                          ADD STUDENT";
             // 
-            // textBox1
+            // Nametxtbox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.Location = new System.Drawing.Point(105, 71);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 20);
-            this.textBox1.TabIndex = 19;
+            this.Nametxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Nametxtbox.Location = new System.Drawing.Point(105, 71);
+            this.Nametxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.Nametxtbox.Name = "Nametxtbox";
+            this.Nametxtbox.Size = new System.Drawing.Size(170, 20);
+            this.Nametxtbox.TabIndex = 19;
             // 
-            // textBox2
+            // regtextbox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox2.Location = new System.Drawing.Point(105, 110);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 20);
-            this.textBox2.TabIndex = 20;
+            this.regtextbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.regtextbox.Location = new System.Drawing.Point(105, 110);
+            this.regtextbox.Margin = new System.Windows.Forms.Padding(2);
+            this.regtextbox.Name = "regtextbox";
+            this.regtextbox.Size = new System.Drawing.Size(170, 20);
+            this.regtextbox.TabIndex = 20;
             // 
-            // textBox3
+            // emailidtxtbox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox3.Location = new System.Drawing.Point(105, 154);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 20);
-            this.textBox3.TabIndex = 21;
+            this.emailidtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.emailidtxtbox.Location = new System.Drawing.Point(105, 154);
+            this.emailidtxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.emailidtxtbox.Name = "emailidtxtbox";
+            this.emailidtxtbox.Size = new System.Drawing.Size(170, 20);
+            this.emailidtxtbox.TabIndex = 21;
             // 
-            // textBox9
+            // phonenumbertxtbox
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox9.Location = new System.Drawing.Point(105, 201);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(170, 20);
-            this.textBox9.TabIndex = 37;
+            this.phonenumbertxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.phonenumbertxtbox.Location = new System.Drawing.Point(105, 201);
+            this.phonenumbertxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.phonenumbertxtbox.Name = "phonenumbertxtbox";
+            this.phonenumbertxtbox.Size = new System.Drawing.Size(170, 20);
+            this.phonenumbertxtbox.TabIndex = 37;
             // 
-            // comboBox1
+            // currentsemcomboBox
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.currentsemcomboBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.currentsemcomboBox.FormattingEnabled = true;
+            this.currentsemcomboBox.Items.AddRange(new object[] {
             "S1",
             "S2",
             "S3",
             "S4"});
-            this.comboBox1.Location = new System.Drawing.Point(420, 150);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 38;
+            this.currentsemcomboBox.Location = new System.Drawing.Point(420, 150);
+            this.currentsemcomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.currentsemcomboBox.Name = "currentsemcomboBox";
+            this.currentsemcomboBox.Size = new System.Drawing.Size(159, 21);
+            this.currentsemcomboBox.TabIndex = 38;
             // 
-            // textBox4
+            // departmenttxtbox
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox4.Location = new System.Drawing.Point(420, 69);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(159, 20);
-            this.textBox4.TabIndex = 39;
+            this.departmenttxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.departmenttxtbox.Location = new System.Drawing.Point(420, 69);
+            this.departmenttxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.departmenttxtbox.Name = "departmenttxtbox";
+            this.departmenttxtbox.Size = new System.Drawing.Size(159, 20);
+            this.departmenttxtbox.TabIndex = 39;
             // 
-            // textBox10
+            // bracnchtxtbox
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox10.Location = new System.Drawing.Point(420, 110);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(159, 20);
-            this.textBox10.TabIndex = 40;
+            this.bracnchtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bracnchtxtbox.Location = new System.Drawing.Point(420, 110);
+            this.bracnchtxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.bracnchtxtbox.Name = "bracnchtxtbox";
+            this.bracnchtxtbox.Size = new System.Drawing.Size(159, 20);
+            this.bracnchtxtbox.TabIndex = 40;
             // 
-            // textBox5
+            // staffadvisortxtbox
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox5.Location = new System.Drawing.Point(420, 197);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 20);
-            this.textBox5.TabIndex = 41;
+            this.staffadvisortxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.staffadvisortxtbox.Location = new System.Drawing.Point(420, 197);
+            this.staffadvisortxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.staffadvisortxtbox.Name = "staffadvisortxtbox";
+            this.staffadvisortxtbox.Size = new System.Drawing.Size(159, 20);
+            this.staffadvisortxtbox.TabIndex = 41;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button2.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(199, 260);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(203, 36);
             this.button2.TabIndex = 42;
             this.button2.Text = "SUBMIT";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -253,16 +254,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.staffadvisortxtbox);
+            this.Controls.Add(this.bracnchtxtbox);
+            this.Controls.Add(this.departmenttxtbox);
+            this.Controls.Add(this.currentsemcomboBox);
+            this.Controls.Add(this.phonenumbertxtbox);
+            this.Controls.Add(this.emailidtxtbox);
+            this.Controls.Add(this.regtextbox);
+            this.Controls.Add(this.Nametxtbox);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddStudentForm";
             this.Text = "AddStudentWindow";
             this.ResumeLayout(false);
@@ -273,14 +274,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Nametxtbox;
+        private System.Windows.Forms.TextBox regtextbox;
+        private System.Windows.Forms.TextBox emailidtxtbox;
+        private System.Windows.Forms.TextBox phonenumbertxtbox;
+        private System.Windows.Forms.ComboBox currentsemcomboBox;
+        private System.Windows.Forms.TextBox departmenttxtbox;
+        private System.Windows.Forms.TextBox bracnchtxtbox;
+        private System.Windows.Forms.TextBox staffadvisortxtbox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

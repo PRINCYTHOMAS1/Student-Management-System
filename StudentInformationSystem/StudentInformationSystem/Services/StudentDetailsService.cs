@@ -9,18 +9,19 @@ using System.Data.SqlClient;
 
 namespace StudentInformationSystem.Services
 {
-    internal class StudentPortalService
+    internal class StudentDetailsService
     {
-        public StudentDetailsModel studentdetails(string Emailid)
+        public StudentDetailsModel GetByEmail(string email)
         {
             ConnectionManager.EnsureConnection();
             var sql = $"SELECT * FROM StudentDetails WHERE EmailId=@EmailId";
             var command = new SqlCommand(sql, ConnectionManager.connection);
-            command.Parameters.AddWithValue(@"EmailId", Emailid);
+            command.Parameters.AddWithValue(@"EmailId", email);
             var reader = command.ExecuteReader();
-            var studdetails = new Models.StudentDetailsModel();
+            StudentDetailsModel studdetails = null;
             while (reader.Read())
             {
+                studdetails = new StudentDetailsModel();
                 studdetails.StudentName = reader.GetString(0);
                 studdetails.RegisterNumber = reader.GetString(1);
                 studdetails.Emailid = reader.GetString(2);
@@ -32,7 +33,6 @@ namespace StudentInformationSystem.Services
             }
             reader.Close();
             return studdetails;
-
         }
     }
 }
