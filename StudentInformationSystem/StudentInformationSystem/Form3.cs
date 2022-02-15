@@ -36,5 +36,10 @@ namespace StudentInformationSystem
         {
 
         }
+
+        private void nametxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

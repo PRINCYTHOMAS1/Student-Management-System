@@ -29,7 +29,6 @@ C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSyst
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.CoreCompileInputs.cache
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.exe
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
-C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.Form6.resources
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.LoginForm.resources
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.ResetPasswordForm.resources
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.StudentPortalForm.resources
@@ -41,3 +40,5 @@ C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSyst
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.TeachersPortalForm.resources
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.AddStudentForm.resources
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.Form6.resources
+C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.AssemblyReference.cache
+C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.TeacherViewForm.resources

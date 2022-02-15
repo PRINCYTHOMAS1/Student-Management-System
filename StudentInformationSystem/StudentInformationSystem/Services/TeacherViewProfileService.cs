@@ -9,9 +9,9 @@ using StudentInformationSystem.Models;
 
 namespace StudentInformationSystem.Services
 {
-    internal class TeacherViewProfile
+    internal class TeacherViewProfileService
     {
-        public TeacherViewModel GetByEmail(string email)
+        public TeacherViewModel TeacherGetByEmail(string email)
         {
             ConnectionManager.EnsureConnection();
             var sql = $"SELECT * FROM TeacherDetails WHERE EmailId=@EmailId";
@@ -24,8 +24,8 @@ namespace StudentInformationSystem.Services
                 teacherDetails = new TeacherViewModel();
                 teacherDetails.TeacherName = reader.GetString(0);
                 teacherDetails.TeacherId = reader.GetString(1);
-                teacherDetails.Emailid = reader.GetString(2);
-                teacherDetails.PhoneNumber = reader.GetInt64(3);
+                teacherDetails.PhoneNumber = reader.GetInt64(2);
+                teacherDetails.Emailid = reader.GetString(3);
                 teacherDetails.Department = reader.GetString(4);
                 teacherDetails.Course = reader.GetString(5);
                

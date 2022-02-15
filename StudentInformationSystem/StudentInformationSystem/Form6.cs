@@ -7,28 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentInformationSystem.Models;
+using StudentInformationSystem.Services;
 
 namespace StudentInformationSystem
 {
-    public partial class teacherView : Form
+    public partial class TeacherViewForm : Form
     {
         private readonly string _email;
-        private readonly TeacherViewProfile _service;
-        public teacherView(string email)
+        private readonly TeacherViewProfileService _service;
+        public TeacherViewForm(string email)
         {
             InitializeComponent();
             _email = email;
-            _service = new TeacherViewProfile();
-            var model = _service.GetByEmail(email);
-            Nametxtbox.Text = model.StudentName;
-
+            _service = new TeacherViewProfileService();
+            var model = _service.TeacherGetByEmail(_email);
+            Nametxtbox.Text = model.TeacherName;
             emailtxtbox.Text = model.Emailid;
-            phnnotxtbox.Text = model.PhoneNumber.ToString();
+            try
+            {
+                phnnotxtbox.Text = model.PhoneNumber.ToString();
+            }
+            catch (Exception) { }
             dpttxtbox.Text = model.Department;
             branchtxtbox.Text = model.Course;
             teacherIdtxtbox.Text = model.TeacherId;
-
-
         }
 
         private void Form6_Load(object sender, EventArgs e)

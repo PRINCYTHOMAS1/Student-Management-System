@@ -1,6 +1,6 @@
 ﻿namespace StudentInformationSystem
 {
-    partial class teacherView
+    partial class TeacherViewForm
     {
         /// <summary>
         /// Required designer variable.
@@ -48,11 +48,11 @@
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(132, 21);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(99, 17);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(776, 38);
+            this.textBox1.Size = new System.Drawing.Size(583, 32);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "TEACHER\'S  VIEW\r\n";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -61,9 +61,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label2.Location = new System.Drawing.Point(129, 125);
+            this.label2.Location = new System.Drawing.Point(97, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 16);
+            this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 44;
             this.label2.Text = "NAME";
             // 
@@ -71,9 +72,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label7.Location = new System.Drawing.Point(129, 184);
+            this.label7.Location = new System.Drawing.Point(97, 150);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 16);
+            this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 46;
             this.label7.Text = "Email Id";
             // 
@@ -81,9 +83,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label4.Location = new System.Drawing.Point(129, 242);
+            this.label4.Location = new System.Drawing.Point(97, 197);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 16);
+            this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 49;
             this.label4.Text = "DEPARTMENT";
             // 
@@ -91,91 +94,94 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label15.Location = new System.Drawing.Point(129, 301);
+            this.label15.Location = new System.Drawing.Point(86, 243);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 16);
+            this.label15.Size = new System.Drawing.Size(93, 13);
             this.label15.TabIndex = 50;
-            this.label15.Text = "BRANCH";
+            this.label15.Text = "Subjects Handling";
             // 
             // Nametxtbox
             // 
             this.Nametxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Nametxtbox.Location = new System.Drawing.Point(366, 119);
-            this.Nametxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Nametxtbox.Location = new System.Drawing.Point(274, 97);
+            this.Nametxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Nametxtbox.Name = "Nametxtbox";
-            this.Nametxtbox.Size = new System.Drawing.Size(225, 22);
+            this.Nametxtbox.Size = new System.Drawing.Size(170, 20);
             this.Nametxtbox.TabIndex = 51;
             // 
             // emailtxtbox
             // 
             this.emailtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.emailtxtbox.Location = new System.Drawing.Point(366, 178);
-            this.emailtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailtxtbox.Location = new System.Drawing.Point(274, 145);
+            this.emailtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emailtxtbox.Name = "emailtxtbox";
-            this.emailtxtbox.Size = new System.Drawing.Size(225, 22);
+            this.emailtxtbox.Size = new System.Drawing.Size(170, 20);
             this.emailtxtbox.TabIndex = 52;
             // 
             // dpttxtbox
             // 
             this.dpttxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.dpttxtbox.Location = new System.Drawing.Point(366, 236);
-            this.dpttxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dpttxtbox.Location = new System.Drawing.Point(274, 192);
+            this.dpttxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dpttxtbox.Name = "dpttxtbox";
-            this.dpttxtbox.Size = new System.Drawing.Size(225, 22);
+            this.dpttxtbox.Size = new System.Drawing.Size(170, 20);
             this.dpttxtbox.TabIndex = 53;
             // 
             // branchtxtbox
             // 
             this.branchtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.branchtxtbox.Location = new System.Drawing.Point(366, 295);
-            this.branchtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.branchtxtbox.Location = new System.Drawing.Point(274, 240);
+            this.branchtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.branchtxtbox.Name = "branchtxtbox";
-            this.branchtxtbox.Size = new System.Drawing.Size(225, 22);
+            this.branchtxtbox.Size = new System.Drawing.Size(170, 20);
             this.branchtxtbox.TabIndex = 54;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Location = new System.Drawing.Point(129, 363);
+            this.label1.Location = new System.Drawing.Point(489, 152);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 55;
             this.label1.Text = "Ph.No";
             // 
             // phnnotxtbox
             // 
             this.phnnotxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.phnnotxtbox.Location = new System.Drawing.Point(366, 357);
-            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.phnnotxtbox.Location = new System.Drawing.Point(580, 152);
+            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phnnotxtbox.Name = "phnnotxtbox";
-            this.phnnotxtbox.Size = new System.Drawing.Size(225, 22);
+            this.phnnotxtbox.Size = new System.Drawing.Size(170, 20);
             this.phnnotxtbox.TabIndex = 56;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label3.Location = new System.Drawing.Point(129, 430);
+            this.label3.Location = new System.Drawing.Point(489, 97);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 16);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 57;
             this.label3.Text = "Teacher ID";
             // 
             // teacherIdtxtbox
             // 
             this.teacherIdtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.teacherIdtxtbox.Location = new System.Drawing.Point(366, 414);
-            this.teacherIdtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.teacherIdtxtbox.Location = new System.Drawing.Point(580, 95);
+            this.teacherIdtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.teacherIdtxtbox.Name = "teacherIdtxtbox";
-            this.teacherIdtxtbox.Size = new System.Drawing.Size(225, 22);
+            this.teacherIdtxtbox.Size = new System.Drawing.Size(170, 20);
             this.teacherIdtxtbox.TabIndex = 58;
             // 
             // teacherView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(783, 306);
             this.Controls.Add(this.teacherIdtxtbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.phnnotxtbox);
@@ -189,7 +195,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "teacherView";
             this.Text = "TEACHER\'S VIEW";
             this.Load += new System.EventHandler(this.Form6_Load);

@@ -42,7 +42,7 @@ namespace StudentInformationSystem
             }
             if (value.UserRole=="Teacher")
             {
-                TeachersPortalForm teacherportal = new TeachersPortalForm();
+                TeachersPortalForm teacherportal = new TeachersPortalForm(emailId);
                 teacherportal.Show();
             }
             if (value.UserRole=="Admin")
