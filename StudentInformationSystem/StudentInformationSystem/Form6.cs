@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace StudentInformationSystem
 {
-    public partial class Form6 : Form
+    public partial class teacherView : Form
     {
-        public Form6()
+        private readonly string _email;
+        private readonly TeacherViewProfile _service;
+        public teacherView(string email)
         {
             InitializeComponent();
+            _email = email;
+            _service = new TeacherViewProfile();
+            var model = _service.GetByEmail(email);
+            Nametxtbox.Text = model.StudentName;
+
+            emailtxtbox.Text = model.Emailid;
+            phnnotxtbox.Text = model.PhoneNumber.ToString();
+            dpttxtbox.Text = model.Department;
+            branchtxtbox.Text = model.Course;
+            teacherIdtxtbox.Text = model.TeacherId;
+
+
         }
 
         private void Form6_Load(object sender, EventArgs e)

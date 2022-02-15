@@ -37,5 +37,11 @@ namespace StudentInformationSystem
         private void button3_Click(object sender, EventArgs e)
         {
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+           teacherView teachersView = new teacherView();
+            teachersView.Show();
+        }
     }
 }

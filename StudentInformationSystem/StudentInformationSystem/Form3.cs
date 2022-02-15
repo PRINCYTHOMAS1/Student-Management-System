@@ -31,5 +31,10 @@ namespace StudentInformationSystem
             staffadvisortxtbox.Text = model.StaffAdvisor;
             currentsemtxtbox.Text = model.CurrentSemester.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
