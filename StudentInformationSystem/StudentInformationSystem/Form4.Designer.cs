@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.emailidtxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -134,7 +135,7 @@
             // emailidtxt
             // 
             this.emailidtxt.Location = new System.Drawing.Point(293, 183);
-            this.emailidtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailidtxt.Margin = new System.Windows.Forms.Padding(4);
             this.emailidtxt.Name = "emailidtxt";
             this.emailidtxt.Size = new System.Drawing.Size(304, 22);
             this.emailidtxt.TabIndex = 24;
@@ -150,12 +151,23 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Register Number";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(419, 310);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 26;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // TeachersPortalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 508);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.emailidtxt);
             this.Controls.Add(this.button2);
@@ -184,5 +196,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox emailidtxt;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

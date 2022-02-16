@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace StudentInformationSystem
 {
     public partial class TeachersPortalForm : Form
@@ -25,6 +27,10 @@ namespace StudentInformationSystem
         }
         private void button2_Click(object sender, EventArgs e)
         {
+           
+
+          
+           
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -37,6 +43,15 @@ namespace StudentInformationSystem
         {
             TeacherViewForm teachersView = new TeacherViewForm(email);
             teachersView.Show();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+           
+
+
+
+
         }
     }
 }

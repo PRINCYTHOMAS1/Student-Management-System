@@ -11,7 +11,7 @@ namespace StudentInformationSystem.Services
 {
     internal class LoginClass
     {
-        int i;
+       
         public Login GetByEmailAndPassword(string email, string password)
         {
             ConnectionManager.EnsureConnection();
