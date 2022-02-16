@@ -10,7 +10,7 @@ namespace StudentInformationSystem.Services
 {
     internal class ConnectionManager
     {
-        const string ConnectionString = @"Data Source = DESKTOP-1IBJ36F; Initial Catalog = StudentManagementSystem;" +
+        const string ConnectionString = @"Data Source = DESKTOP-1IBJ36F\840G3; Initial Catalog = StudentManagementSystem;" +
                 " Integrated Security=True";
 
         public static SqlConnection connection { get; set; }
