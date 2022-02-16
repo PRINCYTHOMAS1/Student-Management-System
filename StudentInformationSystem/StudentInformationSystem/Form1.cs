@@ -42,8 +42,10 @@ namespace StudentInformationSystem
             }
             if (value.UserRole=="Teacher")
             {
-                TeachersPortalForm teacherportal = new TeachersPortalForm(emailId);
-                teacherportal.Show();
+                //TeachersPortalForm teacherportal = new TeachersPortalForm(emailId);
+                //teacherportal.Show();
+                TeacherViewForm teachersView = new TeacherViewForm(emailId);
+                teachersView.Show();
             }
             if (value.UserRole=="Admin")
             {
@@ -65,6 +67,11 @@ namespace StudentInformationSystem
             lbl.Left = loc * 50;
             lbl.Width = 1000;
             lbl.Text = "Enter your Email Id as your user Id!!! ";
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

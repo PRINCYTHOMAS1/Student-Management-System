@@ -36,11 +36,11 @@ namespace StudentInformationSystem.Services
             return studentDetails;
         }
 
-        public void EditStudentService(StudentDetailsModel editstudent)
+        public int EditStudentService(StudentDetailsModel editstudent)
         {
             ConnectionManager.EnsureConnection();
-            var sql = $"UPDATE StudentDetails SET StudentName = @StudentName,RegisterNumber=@RegisterNumber+" +
-                $"EmailId = @EmailId,PhoneNumber=@PhoneNumber,Department=@Department,Course=@Course,StaffAdvisor=@StaffAdvisor" +
+            var sql = $"UPDATE StudentDetails SET StudentName = @StudentName,RegisterNumber=@RegisterNumber," +
+                $"EmailId = @EmailId,PhoneNumber=@PhoneNumber,Department=@Department,Course=@Course,StaffAdvisor=@StaffAdvisor,"+
                 $"CurrentSemester=@CurrentSemester WHERE RegisterNumber=@RegisterNumber";
                 
             var command = new SqlCommand(sql, ConnectionManager.connection);
@@ -52,7 +52,8 @@ namespace StudentInformationSystem.Services
             command.Parameters.AddWithValue(@"course", editstudent.Course);
             command.Parameters.AddWithValue(@"StaffAdvisor", editstudent.StaffAdvisor);
             command.Parameters.AddWithValue(@"CurrentSemester", editstudent.CurrentSemester);
-            command.ExecuteNonQuery();
+            int i=command.ExecuteNonQuery();
+            return i;
         }
     }
 }

@@ -15,6 +15,7 @@ namespace StudentInformationSystem
     public partial class TeacherViewForm : Form
     {
         private readonly string _email;
+        private string _RegNo;
         private readonly TeacherViewProfileService _service;
         public TeacherViewForm(string email)
         {
@@ -34,9 +35,17 @@ namespace StudentInformationSystem
             teacherIdtxtbox.Text = model.TeacherId;
         }
 
-        private void Form6_Load(object sender, EventArgs e)
+        private void AddnewStudentBtn_Click(object sender, EventArgs e)
         {
-            
+            AddStudentForm addstudent = new AddStudentForm();
+            addstudent.Show();
+        }
+
+        private void Viewstudentbtn_Click(object sender, EventArgs e)
+        {
+            _RegNo = RegNoTxtbox.Text;
+            EditStudentform form = new EditStudentform(_RegNo);
+            form.Show();
         }
     }
 }
