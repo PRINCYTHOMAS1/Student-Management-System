@@ -15,7 +15,6 @@ namespace StudentInformationSystem
     public partial class EditStudentform : Form
     {
         private StudentDetailsModel model;
-        //private EditStudentServices studentServices;
 
         public EditStudentform (string regno)
         {
@@ -32,50 +31,19 @@ namespace StudentInformationSystem
             currentsemtxtbox.Text = model.CurrentSemester.ToString();
 
         }
-        private void nametxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.StudentName = nametxtbox.Text;
-        }
-
-        private void RegNoTxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.RegisterNumber = RegNoTxtbox.Text;
-        }
-
-        private void emailidtxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.Emailid = emailidtxtbox.Text;
-        }
-
-        private void phnnotxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.PhoneNumber = Convert.ToInt64(phnnotxtbox.Text) ;
-        }
-
-        private void departmenttxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.Department = departmenttxtbox.Text;
-        }
-
-        private void branchtxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.Course=branchtxtbox.Text; 
-        }
-
-        private void staffadvisortxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.StaffAdvisor=staffadvisortxtbox.Text;
-        }
-
-        private void currentsemtxtbox_TextChanged(object sender, EventArgs e)
-        {
-            model.CurrentSemester=Convert.ToInt32(currentsemtxtbox.Text) ;
-        }
         private void updatebtn_Click(object sender, EventArgs e)
         {
-
+            StudentDetailsModel studentmodel = new StudentDetailsModel();
+            studentmodel.StudentName = nametxtbox.Text;
+            studentmodel.RegisterNumber= RegNoTxtbox.Text;
+            studentmodel.Emailid= emailidtxtbox.Text;
+            studentmodel.PhoneNumber = Convert.ToInt64(phnnotxtbox.Text);
+            studentmodel.Department= departmenttxtbox.Text;
+            studentmodel.Course= branchtxtbox.Text;
+            studentmodel.StaffAdvisor= staffadvisortxtbox.Text;
+            studentmodel.CurrentSemester=Convert.ToInt32(currentsemtxtbox.Text);
             EditStudentServices studentServices = new EditStudentServices();
-            int i = studentServices.EditStudentService(model);
+            int i = studentServices.EditStudentService(studentmodel);
             if (i != 0)
                 MessageBox.Show("Student Details Updated");
         }

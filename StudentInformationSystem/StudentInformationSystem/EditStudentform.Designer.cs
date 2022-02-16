@@ -57,7 +57,6 @@
             this.currentsemtxtbox.Name = "currentsemtxtbox";
             this.currentsemtxtbox.Size = new System.Drawing.Size(159, 20);
             this.currentsemtxtbox.TabIndex = 72;
-            this.currentsemtxtbox.TextChanged += new System.EventHandler(this.currentsemtxtbox_TextChanged);
             // 
             // label16
             // 
@@ -78,7 +77,6 @@
             this.branchtxtbox.Name = "branchtxtbox";
             this.branchtxtbox.Size = new System.Drawing.Size(159, 20);
             this.branchtxtbox.TabIndex = 70;
-            this.branchtxtbox.TextChanged += new System.EventHandler(this.branchtxtbox_TextChanged);
             // 
             // label15
             // 
@@ -99,7 +97,6 @@
             this.phnnotxtbox.Name = "phnnotxtbox";
             this.phnnotxtbox.Size = new System.Drawing.Size(170, 20);
             this.phnnotxtbox.TabIndex = 68;
-            this.phnnotxtbox.TextChanged += new System.EventHandler(this.phnnotxtbox_TextChanged);
             // 
             // label14
             // 
@@ -120,7 +117,6 @@
             this.staffadvisortxtbox.Name = "staffadvisortxtbox";
             this.staffadvisortxtbox.Size = new System.Drawing.Size(159, 20);
             this.staffadvisortxtbox.TabIndex = 63;
-            this.staffadvisortxtbox.TextChanged += new System.EventHandler(this.staffadvisortxtbox_TextChanged);
             // 
             // departmenttxtbox
             // 
@@ -130,7 +126,6 @@
             this.departmenttxtbox.Name = "departmenttxtbox";
             this.departmenttxtbox.Size = new System.Drawing.Size(159, 20);
             this.departmenttxtbox.TabIndex = 62;
-            this.departmenttxtbox.TextChanged += new System.EventHandler(this.departmenttxtbox_TextChanged);
             // 
             // emailidtxtbox
             // 
@@ -140,7 +135,6 @@
             this.emailidtxtbox.Name = "emailidtxtbox";
             this.emailidtxtbox.Size = new System.Drawing.Size(170, 20);
             this.emailidtxtbox.TabIndex = 61;
-            this.emailidtxtbox.TextChanged += new System.EventHandler(this.emailidtxtbox_TextChanged);
             // 
             // RegNoTxtbox
             // 
@@ -150,7 +144,6 @@
             this.RegNoTxtbox.Name = "RegNoTxtbox";
             this.RegNoTxtbox.Size = new System.Drawing.Size(170, 20);
             this.RegNoTxtbox.TabIndex = 60;
-            this.RegNoTxtbox.TextChanged += new System.EventHandler(this.RegNoTxtbox_TextChanged);
             // 
             // nametxtbox
             // 
@@ -160,7 +153,6 @@
             this.nametxtbox.Name = "nametxtbox";
             this.nametxtbox.Size = new System.Drawing.Size(170, 20);
             this.nametxtbox.TabIndex = 59;
-            this.nametxtbox.TextChanged += new System.EventHandler(this.nametxtbox_TextChanged);
             // 
             // label7
             // 
