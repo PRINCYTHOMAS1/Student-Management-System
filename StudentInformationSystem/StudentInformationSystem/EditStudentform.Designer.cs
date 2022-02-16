@@ -227,6 +227,7 @@
             this.AddMarksBtn.TabIndex = 74;
             this.AddMarksBtn.Text = "ADD MARKS";
             this.AddMarksBtn.UseVisualStyleBackColor = true;
+            this.AddMarksBtn.Click += new System.EventHandler(this.AddMarksBtn_Click);
             // 
             // Deletestudentbtn
             // 

@@ -48,5 +48,9 @@ namespace StudentInformationSystem
                 MessageBox.Show("Student Details Updated");
         }
 
+        private void AddMarksBtn_Click(object sender, EventArgs e)
+        {
+            new addmark().Show();
+        }
     }
 }
