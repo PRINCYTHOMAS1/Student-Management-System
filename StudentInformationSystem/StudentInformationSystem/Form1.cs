@@ -35,6 +35,11 @@ namespace StudentInformationSystem
             string emailId = useridtxtbox.Text;
             LoginClass service = new LoginClass();
             Login value = service.GetByEmailAndPassword(useridtxtbox.Text, Passwordtxtbox.Text);
+            if (value == null)
+            {
+                MessageBox.Show("you enterd incorrect UserId or Password try again");
+                return;
+            }
             if (value.UserRole == "Student")
             {
                 StudentPortalForm studentportalform = new StudentPortalForm(emailId);
@@ -68,10 +73,6 @@ namespace StudentInformationSystem
             lbl.Width = 1000;
             lbl.Text = "Enter your Email Id as your user Id!!! ";
         }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -21,6 +21,7 @@ namespace StudentInformationSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             StudentDetailsModel studentDetailsModel = new StudentDetailsModel();
             studentDetailsModel.StudentName = Nametxtbox.Text;
             studentDetailsModel.RegisterNumber = regnotxtbox.Text;

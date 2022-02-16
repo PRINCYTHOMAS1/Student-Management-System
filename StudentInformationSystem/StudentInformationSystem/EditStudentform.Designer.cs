@@ -219,7 +219,7 @@
             // 
             // updatebtn
             // 
-            this.updatebtn.Location = new System.Drawing.Point(376, 326);
+            this.updatebtn.Location = new System.Drawing.Point(376, 306);
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.Size = new System.Drawing.Size(129, 23);
             this.updatebtn.TabIndex = 73;
@@ -229,7 +229,7 @@
             // 
             // AddMarksBtn
             // 
-            this.AddMarksBtn.Location = new System.Drawing.Point(527, 326);
+            this.AddMarksBtn.Location = new System.Drawing.Point(529, 306);
             this.AddMarksBtn.Name = "AddMarksBtn";
             this.AddMarksBtn.Size = new System.Drawing.Size(113, 23);
             this.AddMarksBtn.TabIndex = 74;
@@ -238,7 +238,7 @@
             // 
             // Deletestudentbtn
             // 
-            this.Deletestudentbtn.Location = new System.Drawing.Point(674, 326);
+            this.Deletestudentbtn.Location = new System.Drawing.Point(674, 306);
             this.Deletestudentbtn.Name = "Deletestudentbtn";
             this.Deletestudentbtn.Size = new System.Drawing.Size(114, 23);
             this.Deletestudentbtn.TabIndex = 75;
