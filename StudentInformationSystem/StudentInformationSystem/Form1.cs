@@ -54,7 +54,7 @@ namespace StudentInformationSystem
             }
             if (value.UserRole=="Admin")
             {
-                AdminPortalForm adminportal= new AdminPortalForm();
+                AdminPortalForm adminportal= new AdminPortalForm(emailId);
                 adminportal.Show();
             }
         }
@@ -73,6 +73,7 @@ namespace StudentInformationSystem
             lbl.Width = 1000;
             lbl.Text = "Enter your Email Id as your user Id!!! ";
         }
+
         
     }
 }
