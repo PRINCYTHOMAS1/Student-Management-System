@@ -15,15 +15,19 @@ namespace StudentInformationSystem.Services
 
         {
             ConnectionManager.EnsureConnection();
-            var sql = $"INSERT INTO StudentsMarks VALUES (@RegisterNumber,@Semester,@Subject1Mark,@Subject2Mark,@Subject3Mark)";
-            var command = new SqlCommand(sql, ConnectionManager.connection);
-            command.Parameters.AddWithValue(@"RegisterNumber", newstudent.RegisterNumber);
-            command.Parameters.AddWithValue("@Semester",newstudent.semester);
-            command.Parameters.AddWithValue(@"Subject1Mark", newstudent.Subject1);
-            command.Parameters.AddWithValue(@"Subject2Mark", newstudent.Subject2);
-            command.Parameters.AddWithValue(@"Subject3Mark", newstudent.Subject3);
-            int i= command.ExecuteNonQuery();
-            return i;
+            try
+            {
+                var sql = $"INSERT INTO StudentsMarks VALUES (@RegisterNumber,@Semester,@Subject1Mark,@Subject2Mark,@Subject3Mark)";
+                var command = new SqlCommand(sql, ConnectionManager.connection);
+                command.Parameters.AddWithValue(@"RegisterNumber", newstudent.RegisterNumber);
+                command.Parameters.AddWithValue("@Semester", newstudent.semester);
+                command.Parameters.AddWithValue(@"Subject1Mark", newstudent.Subject1);
+                command.Parameters.AddWithValue(@"Subject2Mark", newstudent.Subject2);
+                command.Parameters.AddWithValue(@"Subject3Mark", newstudent.Subject3);
+                int i = command.ExecuteNonQuery();
+                return i;
+            }
+            catch { return 0; }
         }
     }
 }

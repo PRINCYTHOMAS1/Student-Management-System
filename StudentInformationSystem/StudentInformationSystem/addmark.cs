@@ -30,6 +30,12 @@ namespace StudentInformationSystem
             mark.Subject3 = Convert.ToInt32(mark3txtbox.Text);
             AddMarkService add = new AddMarkService();
             int i= add.AddMarkServices(mark);
+            if (i==0)
+            {
+                string str = $"{regtextbox.Text} with semester {SemcomboBox.SelectedItem} mark already excists";
+                MessageBox.Show(str);
+            }
+             
             if (i != 0)
                 MessageBox.Show("marks added!!!!!");
             this.Close();
