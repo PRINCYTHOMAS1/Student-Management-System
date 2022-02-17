@@ -47,8 +47,6 @@ namespace StudentInformationSystem
             }
             if (value.UserRole=="Teacher")
             {
-                //TeachersPortalForm teacherportal = new TeachersPortalForm(emailId);
-                //teacherportal.Show();
                 TeacherViewForm teachersView = new TeacherViewForm(emailId);
                 teachersView.Show();
             }

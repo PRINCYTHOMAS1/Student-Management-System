@@ -64,3 +64,5 @@ C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSyste
 C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.exe
 C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
 C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.addmark.resources
+C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.addmark.resources
+C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.AdminPortalForm.resources

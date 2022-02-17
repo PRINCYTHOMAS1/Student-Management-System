@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentInformationSystem.Services;
 
 namespace StudentInformationSystem
 {
@@ -29,10 +30,22 @@ namespace StudentInformationSystem
                 MessageBox.Show("password doesnt match");
                 return ;
             }
-            MessageBox.Show("Login with your new password");
+            PasswordResetClass passwordResetClass = new PasswordResetClass();
+            var model=passwordResetClass.GetLoginEmail(emailidtxt.Text);
+            if (model != null)
+            {
+                model.EmailId = emailidtxt.Text;
+                model.Password = passwordtxt.Text;
+                model.UserRole = model.UserRole;
+                passwordResetClass.UpdatePassword(model);
+                MessageBox.Show("Login with your new password");
+            }
+            else
+            {
+                MessageBox.Show("User doesnot excist");
+            }
             LoginForm loginpage=new LoginForm();
             loginpage.Show();
-
         }
         int loc = 10;
         private void passwordtxt_TextChanged(object sender, EventArgs e)

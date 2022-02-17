@@ -107,6 +107,7 @@
     <Compile Include="Services\ConnectionManager.cs" />
     <Compile Include="Services\EditStudentServices.cs" />
     <Compile Include="Services\LoginClass.cs" />
+    <Compile Include="Services\PasswordResetClass.cs" />
     <Compile Include="Services\StudentDetailsService.cs" />
     <Compile Include="Services\TeacherViewProfileService.cs" />
     <EmbeddedResource Include="addmark.resx">
