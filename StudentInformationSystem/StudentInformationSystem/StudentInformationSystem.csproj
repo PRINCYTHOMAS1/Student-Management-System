@@ -111,6 +111,7 @@
     <Compile Include="Services\PasswordResetClass.cs" />
     <Compile Include="Services\StudentDetailsService.cs" />
     <Compile Include="Services\TeacherViewProfileService.cs" />
+    <Compile Include="Services\ViewMarksService.cs" />
     <EmbeddedResource Include="addmark.resx">
       <DependentUpon>addmark.cs</DependentUpon>
     </EmbeddedResource>

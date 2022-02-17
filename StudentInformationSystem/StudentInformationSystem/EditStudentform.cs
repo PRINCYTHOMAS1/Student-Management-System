@@ -55,10 +55,11 @@ namespace StudentInformationSystem
 
         private void Deletestudentbtn_Click(object sender, EventArgs e)
         {
-           
             DeleteStudentService studentService = new DeleteStudentService();
-            studentService.DeleteStudentStudentMarksTable(RegNoTxtbox.Text);
-            studentService.DeleteStudentStudentDetailsTable(emailidtxtbox.Text);
+            int i= studentService.DeleteStudentStudentMarksTable(RegNoTxtbox.Text,emailidtxtbox.Text);
+            if (i != 0)
+                MessageBox.Show($"Student with Register Number {RegNoTxtbox.Text} Deleted!!!!!!!");
+            this.Close();
         }
     }
 }

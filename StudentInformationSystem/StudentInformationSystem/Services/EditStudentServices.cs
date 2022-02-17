@@ -29,8 +29,6 @@ namespace StudentInformationSystem.Services
                 studentDetails.Course = reader.GetString(5);
                 studentDetails.StaffAdvisor = reader.GetString(6);
                 studentDetails.CurrentSemester = reader.GetInt32(7);
-
-
             }
             reader.Close();
             return studentDetails;

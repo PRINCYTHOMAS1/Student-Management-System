@@ -11,24 +11,17 @@ namespace StudentInformationSystem.Services
     internal class DeleteStudentService
     {
         
-        public void DeleteStudentStudentMarksTable( string RegisterNumber)
+        public int DeleteStudentStudentMarksTable( string RegisterNumber,string EmailId)
         {
             ConnectionManager.EnsureConnection();
-            var sql = $"DELETE FROM StudentsMarks where RegisterNumber=@RegisterNumber";
+            var sql = $"DELETE FROM StudentsMarks where RegisterNumber=@RegisterNumber;" +
+                $"delete from StudentDetails where StudentDetails.Emailid=@EmailId;" +
+                $"delete from LoginTable where LoginTable.EmailId = @EmailId; ";
             var command = new SqlCommand(sql, ConnectionManager.connection);
             command.Parameters.AddWithValue("@RegisterNumber", RegisterNumber);
-            command.ExecuteNonQuery();
-              
+            command.Parameters.AddWithValue("@EmailId", EmailId);
+            int i=command.ExecuteNonQuery();
+            return i;
         }
-        public void DeleteStudentStudentDetailsTable(string Emailid)
-        {
-            ConnectionManager.EnsureConnection();
-            var sql = $"DELETE StudentDetails , LoginTable USING StudentDetails INNER JOIN LoginTable ON " +
-                $"StudentDetails.Emailid = LoginTable.EmailId WHERE StudentTable.Emailid = @Emailid";
-            var command = new SqlCommand(sql, ConnectionManager.connection);
-            command.Parameters.AddWithValue("@Emailid", Emailid);
-            command.ExecuteNonQuery();
-        }
-        
     }
 }
