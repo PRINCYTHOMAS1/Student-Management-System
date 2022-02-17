@@ -105,6 +105,7 @@
     <Compile Include="Services\AddStudentService.cs" />
     <Compile Include="Services\AdminService.cs" />
     <Compile Include="Services\ConnectionManager.cs" />
+    <Compile Include="Services\DeleteStudentService.cs" />
     <Compile Include="Services\EditStudentServices.cs" />
     <Compile Include="Services\LoginClass.cs" />
     <Compile Include="Services\PasswordResetClass.cs" />

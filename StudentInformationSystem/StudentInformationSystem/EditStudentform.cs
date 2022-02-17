@@ -52,5 +52,17 @@ namespace StudentInformationSystem
         {
             new addmark(RegNoTxtbox.Text).Show();
         }
+
+        private void Deletestudentbtn_Click(object sender, EventArgs e)
+        {
+           // StudentDetailsModel studentmodel = new StudentDetailsModel();
+            DeleteStudentService studentService = new DeleteStudentService();
+            studentService.DeleteStudentServices();
+
+           
+            
+
+            
+        }
     }
 }

@@ -34,7 +34,6 @@ C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInfo
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.LoginForm.resources
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.ResetPasswordForm.resources
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.StudentPortalForm.resources
-C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.TeachersPortalForm.resources
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.AddStudentForm.resources
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.AssemblyReference.cache
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.TeacherViewForm.resources
@@ -66,3 +65,6 @@ C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSyste
 C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.addmark.resources
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.addmark.resources
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.AdminPortalForm.resources
+C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.addmark.resources
+C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.AdminPortalForm.resources
+C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.EditStudentform.resources
