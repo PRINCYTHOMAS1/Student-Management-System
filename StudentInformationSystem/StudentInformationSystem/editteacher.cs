@@ -39,7 +39,7 @@ namespace StudentInformationSystem
             EditTeacherServices teacherservices = new EditTeacherServices();
             int i = teacherservices.EditTeacherService(model);
             if (i != 0)
-                MessageBox.Show("Student Details Updated");
+                MessageBox.Show("Teacher Details Updated");
         }
     }
 

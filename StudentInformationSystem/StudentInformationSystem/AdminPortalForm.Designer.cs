@@ -230,12 +230,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label6.Location = new System.Drawing.Point(337, 140);
+            this.label6.Location = new System.Drawing.Point(448, 143);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(191, 13);
+            this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 85;
-            this.label6.Text = "REGISTER NUMBER OF TEACHERR\r\n";
+            this.label6.Text = "TEACHER ID\r\n";
             // 
             // editteacherbutton
             // 
