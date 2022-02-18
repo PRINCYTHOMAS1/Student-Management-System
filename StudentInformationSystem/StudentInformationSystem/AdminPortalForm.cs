@@ -31,6 +31,9 @@ namespace StudentInformationSystem
 
         }
 
-        
+        private void AddTeacher_Click(object sender, EventArgs e)
+        {
+            new AddTeacher().Show();
+        }
     }
 }

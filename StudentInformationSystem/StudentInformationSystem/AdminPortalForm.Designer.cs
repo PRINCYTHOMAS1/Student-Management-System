@@ -39,7 +39,7 @@
             this.TeacherIdtxtbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.updatebtn = new System.Windows.Forms.Button();
+            this.AddTeacher = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -149,17 +149,18 @@
             this.label3.TabIndex = 63;
             this.label3.Text = "QUALIFICATION\r\n";
             // 
-            // updatebtn
+            // AddTeacher
             // 
-            this.updatebtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.updatebtn.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.updatebtn.Location = new System.Drawing.Point(561, 186);
-            this.updatebtn.Margin = new System.Windows.Forms.Padding(4);
-            this.updatebtn.Name = "updatebtn";
-            this.updatebtn.Size = new System.Drawing.Size(172, 28);
-            this.updatebtn.TabIndex = 74;
-            this.updatebtn.Text = "ADD TEACHER\r\n";
-            this.updatebtn.UseVisualStyleBackColor = false;
+            this.AddTeacher.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.AddTeacher.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.AddTeacher.Location = new System.Drawing.Point(561, 186);
+            this.AddTeacher.Margin = new System.Windows.Forms.Padding(4);
+            this.AddTeacher.Name = "AddTeacher";
+            this.AddTeacher.Size = new System.Drawing.Size(172, 28);
+            this.AddTeacher.TabIndex = 74;
+            this.AddTeacher.Text = "ADD TEACHER\r\n";
+            this.AddTeacher.UseVisualStyleBackColor = false;
+            this.AddTeacher.Click += new System.EventHandler(this.AddTeacher_Click);
             // 
             // button1
             // 
@@ -179,7 +180,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 522);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.updatebtn);
+            this.Controls.Add(this.AddTeacher);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TeacherIdtxtbox);
             this.Controls.Add(this.label2);
@@ -193,7 +194,6 @@
             this.Controls.Add(this.label1);
             this.Name = "AdminPortalForm";
             this.Text = "AdminPortalForm";
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,7 +212,7 @@
         private System.Windows.Forms.TextBox TeacherIdtxtbox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button updatebtn;
+        private System.Windows.Forms.Button AddTeacher;
         private System.Windows.Forms.Button button1;
     }
 }

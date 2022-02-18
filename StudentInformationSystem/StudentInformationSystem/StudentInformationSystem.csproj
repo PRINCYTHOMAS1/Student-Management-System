@@ -52,6 +52,12 @@
     <Compile Include="addmark.Designer.cs">
       <DependentUpon>addmark.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeacher.Designer.cs">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminPortalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AddMarkService.cs" />
     <Compile Include="Services\AddStudentService.cs" />
+    <Compile Include="Services\AddTeacherService.cs" />
     <Compile Include="Services\AdminService.cs" />
     <Compile Include="Services\ConnectionManager.cs" />
     <Compile Include="Services\DeleteStudentService.cs" />
@@ -114,6 +121,9 @@
     <Compile Include="Services\ViewMarksService.cs" />
     <EmbeddedResource Include="addmark.resx">
       <DependentUpon>addmark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeacher.resx">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPortalForm.resx">
       <DependentUpon>AdminPortalForm.cs</DependentUpon>
