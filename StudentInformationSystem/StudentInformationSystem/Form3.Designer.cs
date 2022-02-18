@@ -150,6 +150,7 @@
             this.SemcomboBox.Name = "SemcomboBox";
             this.SemcomboBox.Size = new System.Drawing.Size(170, 21);
             this.SemcomboBox.TabIndex = 17;
+            this.SemcomboBox.SelectedIndexChanged += new System.EventHandler(this.SemcomboBox_SelectedIndexChanged);
             // 
             // nametxtbox
             // 

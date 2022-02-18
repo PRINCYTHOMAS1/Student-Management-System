@@ -39,61 +39,56 @@ namespace StudentInformationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            registernumber = RegNoTxtbox.Text;
+            ViewMarksService mark = new ViewMarksService();
+            AddMarks model = null;
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 1)
             {
-
-
-                registernumber = RegNoTxtbox.Text;
-                ViewMarksService mark = new ViewMarksService();
-                AddMarks model = null;
-                if (Convert.ToInt32(SemcomboBox.SelectedItem) == 1)
-                {
-                    model = new AddMarks();
-                    sub1textBox.Text = "C ++";
-                    sub2textBox.Text = "Python";
-                    sub3textBox.Text = "Java";
-                    model = mark.ViewMarks(registernumber, 1);
-                }
-                if (Convert.ToInt32(SemcomboBox.SelectedItem) == 2)
-                {
-                    model = new AddMarks();
-                    sub1textBox.Text = "PHP";
-                    sub2textBox.Text = "HTML";
-                    sub3textBox.Text = "CSS";
-                    model = mark.ViewMarks(registernumber, 2);
-                }
-                if (Convert.ToInt32(SemcomboBox.SelectedItem) == 3)
-                {
-                    model = new AddMarks();
-                    sub1textBox.Text = "C Sharp";
-                    sub2textBox.Text = "Android";
-                    sub3textBox.Text = "Java";
-                    model = mark.ViewMarks(registernumber, 3);
-                }
-                if (Convert.ToInt32(SemcomboBox.SelectedItem) == 4)
-                {
-                    model = new AddMarks();
-                    sub1textBox.Text = "Cloud Computing";
-                    sub2textBox.Text = "Android";
-                    sub3textBox.Text = "Java";
-                    model = mark.ViewMarks(registernumber, 4);
-                }
-
-                SemcomboBox.SelectedItem = model.semester.ToString();
-                RegNoTxtbox.Text = model.RegisterNumber;
-                mark1textBox.Text = model.Subject1.ToString();
-                mark2txtbox.Text = model.Subject2.ToString();
-                mark3textBox.Text = model.Subject3.ToString();
-                //if (model == null)
-                //{
-                //    MessageBox.Show("mark is not added Yet !!!!");
-                //}
+                model = new AddMarks();
+                sub1textBox.Text = "C ++";
+                sub2textBox.Text = "Python";
+                sub3textBox.Text = "Java";
+                model = mark.ViewMarks(registernumber, 1);
             }
-            catch (Exception)
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 2)
             { 
-                MessageBox.Show("mark is not added Yet !!!!");
+                model = new AddMarks();
+                sub1textBox.Text = "PHP";
+                sub2textBox.Text = "HTML";
+                sub3textBox.Text = "CSS";
+                model = mark.ViewMarks(registernumber, 2);
             }
-                
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 3)
+            {
+                model = new AddMarks();
+                sub1textBox.Text = "C Sharp";
+                sub2textBox.Text = "Android";
+                sub3textBox.Text = "Cloud Computing";
+                model = mark.ViewMarks(registernumber, 3);
+            }
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 4)
+            {
+                model = new AddMarks();
+                sub1textBox.Text = "Web Development";
+                sub2textBox.Text = "DBMS";
+                sub3textBox.Text = "DOT NET";
+                model = mark.ViewMarks(registernumber, 4);
+            }
+            if(model == null)
+            {
+                MessageBox.Show("The mark list is empty.");
+                return;
+            }
+            SemcomboBox.SelectedItem = model.semester.ToString();
+            RegNoTxtbox.Text = model.RegisterNumber;
+            mark1textBox.Text = model.Subject1.ToString();
+            mark2txtbox.Text = model.Subject2.ToString();
+            mark3textBox.Text = model.Subject3.ToString();
+        }
+
+        private void SemcomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

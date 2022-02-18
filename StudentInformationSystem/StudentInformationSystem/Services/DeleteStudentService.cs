@@ -20,7 +20,7 @@ namespace StudentInformationSystem.Services
             var command = new SqlCommand(sql, ConnectionManager.connection);
             command.Parameters.AddWithValue("@RegisterNumber", RegisterNumber);
             command.Parameters.AddWithValue("@EmailId", EmailId);
-            int i=command.ExecuteNonQuery();
+            int i = command.ExecuteNonQuery();
             return i;
         }
     }

@@ -13,7 +13,7 @@ namespace StudentInformationSystem.Services
         public AdminDetails adminGetByEmail(string email)
         {
             ConnectionManager.EnsureConnection();
-            var sql = $"SELECT * FROM AdminTable WHERE EmailId=@EmailId";
+            var sql = $"SELECT * FROM AdminTable WHERE Email=@EmailId";
             var command = new SqlCommand(sql, ConnectionManager.connection);
             command.Parameters.AddWithValue(@"EmailId", email);
             var reader = command.ExecuteReader();
@@ -26,8 +26,6 @@ namespace StudentInformationSystem.Services
                 adminDetails.TeacherId = reader.GetString(2);
                 adminDetails.PhoneNumber = reader.GetInt64(3);
                 adminDetails.Qualification = reader.GetString(4);
-
-
             }
             reader.Close();
             return adminDetails;

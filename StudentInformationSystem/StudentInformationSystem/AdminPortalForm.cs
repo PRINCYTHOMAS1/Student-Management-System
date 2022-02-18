@@ -19,7 +19,6 @@ namespace StudentInformationSystem
         public AdminPortalForm(string emailId)
         {
             InitializeComponent();
-            
             _service = new AdminService();
             var model = _service.adminGetByEmail(emailId);
             nametxtbox.Text = model.AdminName;
@@ -27,13 +26,23 @@ namespace StudentInformationSystem
             emailidtxtbox.Text = model.EmailId;
             phnnotxtbox.Text = model.PhoneNumber.ToString();
             TeacherIdtxtbox.Text = model.TeacherId;
-           
-
         }
 
         private void AddTeacher_Click(object sender, EventArgs e)
         {
             new AddTeacher().Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddStudentForm addStudentForm = new AddStudentForm();
+            addStudentForm.Show();
+        }
+
+        private void editstudentbutton2_Click(object sender, EventArgs e)
+        {
+            EditStudentform edit = new EditStudentform(registertextBox.Text);
+            edit.Show();
         }
     }
 }
