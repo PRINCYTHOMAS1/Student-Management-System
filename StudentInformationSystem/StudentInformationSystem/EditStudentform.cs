@@ -50,7 +50,7 @@ namespace StudentInformationSystem
 
         private void AddMarksBtn_Click(object sender, EventArgs e)
         {
-            new addmark(RegNoTxtbox.Text).Show();
+            new addmark(RegNoTxtbox.Text,currentsemtxtbox.Text).Show();
         }
 
         private void Deletestudentbtn_Click(object sender, EventArgs e)

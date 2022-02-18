@@ -16,14 +16,14 @@ namespace StudentInformationSystem.Services
             ConnectionManager.EnsureConnection();
             var sql = $"SELECT * FROM StudentsMarks Where RegisterNumber=@registernumber AND Semester=@semester";
             var command = new SqlCommand(sql, ConnectionManager.connection);
-            command.Parameters.AddWithValue(@"RegisterNumber",registernumber);
-            command.Parameters.AddWithValue(@"semester",semester);
+            command.Parameters.AddWithValue(@"RegisterNumber", registernumber);
+            command.Parameters.AddWithValue(@"semester", semester);
             var reader = command.ExecuteReader();
             AddMarks viewmarks = null;
             while (reader.Read())
             {
                 viewmarks = new AddMarks();
-                viewmarks.semester =reader.GetInt32(1);
+                viewmarks.semester = reader.GetInt32(1);
                 viewmarks.RegisterNumber = reader.GetString(0);
                 viewmarks.Subject1 = reader.GetInt32(2);
                 viewmarks.Subject2 = reader.GetInt32(3);
@@ -31,6 +31,7 @@ namespace StudentInformationSystem.Services
             }
             reader.Close();
             return viewmarks;
+            
         }
     }
     

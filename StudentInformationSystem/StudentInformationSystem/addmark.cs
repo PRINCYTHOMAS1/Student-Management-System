@@ -14,10 +14,17 @@ namespace StudentInformationSystem
 {
     public partial class addmark : Form
     {
-        public addmark(string registerNumber)
+        private int currentsem;
+        public addmark(string registerNumber,string currentsemester)
         {
             InitializeComponent();
             regtextbox.Text= registerNumber;
+            currentsem= Convert.ToInt32(currentsemester);
+            for(int i=1;i<=currentsem;i++)
+            {
+                SemcomboBox.Items.Add(i.ToString());
+            }
+            
         }
 
         private void markbutton_Click(object sender, EventArgs e)
@@ -40,6 +47,34 @@ namespace StudentInformationSystem
                 MessageBox.Show("marks added!!!!!");
             this.Close();
         }
-   }
+
+        private void SemcomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 1)
+            {
+                sub1textBox.Text = "C ++";
+                sub2textBox.Text = "Python";
+                sub3textBox.Text = "Java";
+            }
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 2)
+            {
+                sub1textBox.Text = "PHP";
+                sub2textBox.Text = "HTML";
+                sub3textBox.Text = "CSS";
+            }
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 3)
+            {
+                sub1textBox.Text = "C Sharp";
+                sub2textBox.Text = "Android";
+                sub3textBox.Text = "Java";
+            }
+            if (Convert.ToInt32(SemcomboBox.SelectedItem) == 4)
+            {
+                sub1textBox.Text = "Cloud Computing";
+                sub2textBox.Text = "Android";
+                sub3textBox.Text = "Java";
+            }
+        }
+    }
 }
 

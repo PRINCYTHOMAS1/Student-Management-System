@@ -145,11 +145,6 @@
             // 
             this.SemcomboBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.SemcomboBox.FormattingEnabled = true;
-            this.SemcomboBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
             this.SemcomboBox.Location = new System.Drawing.Point(126, 225);
             this.SemcomboBox.Margin = new System.Windows.Forms.Padding(2);
             this.SemcomboBox.Name = "SemcomboBox";
@@ -207,7 +202,7 @@
             this.mark1textBox.Location = new System.Drawing.Point(406, 258);
             this.mark1textBox.Margin = new System.Windows.Forms.Padding(2);
             this.mark1textBox.Name = "mark1textBox";
-            this.mark1textBox.Size = new System.Drawing.Size(175, 20);
+            this.mark1textBox.Size = new System.Drawing.Size(170, 20);
             this.mark1textBox.TabIndex = 23;
             // 
             // label8

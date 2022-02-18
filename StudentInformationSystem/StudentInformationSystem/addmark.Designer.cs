@@ -39,13 +39,19 @@
             this.regtextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SemcomboBox = new System.Windows.Forms.ComboBox();
+            this.sub1textBox = new System.Windows.Forms.TextBox();
+            this.sub2textBox = new System.Windows.Forms.TextBox();
+            this.sub3textBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // subject1
             // 
             this.subject1.AutoSize = true;
             this.subject1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject1.Location = new System.Drawing.Point(77, 111);
+            this.subject1.Location = new System.Drawing.Point(77, 113);
             this.subject1.Name = "subject1";
             this.subject1.Size = new System.Drawing.Size(85, 20);
             this.subject1.TabIndex = 0;
@@ -73,21 +79,21 @@
             // 
             // mark1txtbox
             // 
-            this.mark1txtbox.Location = new System.Drawing.Point(196, 111);
+            this.mark1txtbox.Location = new System.Drawing.Point(423, 113);
             this.mark1txtbox.Name = "mark1txtbox";
             this.mark1txtbox.Size = new System.Drawing.Size(46, 20);
             this.mark1txtbox.TabIndex = 3;
             // 
             // mark2txtbox
             // 
-            this.mark2txtbox.Location = new System.Drawing.Point(196, 159);
+            this.mark2txtbox.Location = new System.Drawing.Point(423, 159);
             this.mark2txtbox.Name = "mark2txtbox";
             this.mark2txtbox.Size = new System.Drawing.Size(46, 20);
             this.mark2txtbox.TabIndex = 4;
             // 
             // mark3txtbox
             // 
-            this.mark3txtbox.Location = new System.Drawing.Point(196, 210);
+            this.mark3txtbox.Location = new System.Drawing.Point(423, 208);
             this.mark3txtbox.Name = "mark3txtbox";
             this.mark3txtbox.Size = new System.Drawing.Size(46, 20);
             this.mark3txtbox.TabIndex = 5;
@@ -95,7 +101,7 @@
             // markbutton
             // 
             this.markbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.markbutton.Location = new System.Drawing.Point(141, 278);
+            this.markbutton.Location = new System.Drawing.Point(394, 289);
             this.markbutton.Name = "markbutton";
             this.markbutton.Size = new System.Drawing.Size(75, 30);
             this.markbutton.TabIndex = 6;
@@ -133,26 +139,75 @@
             // SemcomboBox
             // 
             this.SemcomboBox.FormattingEnabled = true;
-            this.SemcomboBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.SemcomboBox.Location = new System.Drawing.Point(196, 79);
+            this.SemcomboBox.Location = new System.Drawing.Point(200, 76);
             this.SemcomboBox.Name = "SemcomboBox";
-            this.SemcomboBox.Size = new System.Drawing.Size(118, 21);
+            this.SemcomboBox.Size = new System.Drawing.Size(124, 21);
             this.SemcomboBox.TabIndex = 11;
+            this.SemcomboBox.SelectedIndexChanged += new System.EventHandler(this.SemcomboBox_SelectedIndexChanged);
+            // 
+            // sub1textBox
+            // 
+            this.sub1textBox.Location = new System.Drawing.Point(200, 113);
+            this.sub1textBox.Name = "sub1textBox";
+            this.sub1textBox.Size = new System.Drawing.Size(124, 20);
+            this.sub1textBox.TabIndex = 12;
+            // 
+            // sub2textBox
+            // 
+            this.sub2textBox.Location = new System.Drawing.Point(200, 159);
+            this.sub2textBox.Name = "sub2textBox";
+            this.sub2textBox.Size = new System.Drawing.Size(124, 20);
+            this.sub2textBox.TabIndex = 13;
+            // 
+            // sub3textBox
+            // 
+            this.sub3textBox.Location = new System.Drawing.Point(200, 210);
+            this.sub3textBox.Name = "sub3textBox";
+            this.sub3textBox.Size = new System.Drawing.Size(124, 20);
+            this.sub3textBox.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(347, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Mark";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(347, 159);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 20);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "mark";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(347, 206);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 20);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Mark";
             // 
             // addmark
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ClientSize = new System.Drawing.Size(519, 361);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sub3textBox);
+            this.Controls.Add(this.sub2textBox);
+            this.Controls.Add(this.sub1textBox);
             this.Controls.Add(this.SemcomboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.regtextbox);
@@ -186,5 +241,11 @@
         private System.Windows.Forms.TextBox regtextbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox SemcomboBox;
+        private System.Windows.Forms.TextBox sub1textBox;
+        private System.Windows.Forms.TextBox sub2textBox;
+        private System.Windows.Forms.TextBox sub3textBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
