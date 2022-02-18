@@ -41,11 +41,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.AddTeacher = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.editteacherbutton = new System.Windows.Forms.Button();
-            this.deleteteacherbutton2 = new System.Windows.Forms.Button();
             this.editstudentbutton2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.registertextBox = new System.Windows.Forms.TextBox();
+            this.teacherregistertextbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.editteacherbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -63,8 +64,8 @@
             // phnnotxtbox
             // 
             this.phnnotxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.phnnotxtbox.Location = new System.Drawing.Point(160, 228);
-            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phnnotxtbox.Location = new System.Drawing.Point(145, 225);
+            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.phnnotxtbox.Name = "phnnotxtbox";
             this.phnnotxtbox.Size = new System.Drawing.Size(170, 20);
             this.phnnotxtbox.TabIndex = 44;
@@ -83,8 +84,8 @@
             // emailidtxtbox
             // 
             this.emailidtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.emailidtxtbox.Location = new System.Drawing.Point(160, 178);
-            this.emailidtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailidtxtbox.Location = new System.Drawing.Point(145, 180);
+            this.emailidtxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.emailidtxtbox.Name = "emailidtxtbox";
             this.emailidtxtbox.Size = new System.Drawing.Size(170, 20);
             this.emailidtxtbox.TabIndex = 42;
@@ -92,8 +93,8 @@
             // Qualificationtxtbox
             // 
             this.Qualificationtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Qualificationtxtbox.Location = new System.Drawing.Point(160, 276);
-            this.Qualificationtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Qualificationtxtbox.Location = new System.Drawing.Point(145, 278);
+            this.Qualificationtxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.Qualificationtxtbox.Name = "Qualificationtxtbox";
             this.Qualificationtxtbox.Size = new System.Drawing.Size(170, 20);
             this.Qualificationtxtbox.TabIndex = 41;
@@ -101,8 +102,8 @@
             // nametxtbox
             // 
             this.nametxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.nametxtbox.Location = new System.Drawing.Point(160, 89);
-            this.nametxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nametxtbox.Location = new System.Drawing.Point(145, 89);
+            this.nametxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.nametxtbox.Name = "nametxtbox";
             this.nametxtbox.Size = new System.Drawing.Size(170, 20);
             this.nametxtbox.TabIndex = 40;
@@ -132,8 +133,8 @@
             // TeacherIdtxtbox
             // 
             this.TeacherIdtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TeacherIdtxtbox.Location = new System.Drawing.Point(160, 132);
-            this.TeacherIdtxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TeacherIdtxtbox.Location = new System.Drawing.Point(145, 134);
+            this.TeacherIdtxtbox.Margin = new System.Windows.Forms.Padding(2);
             this.TeacherIdtxtbox.Name = "TeacherIdtxtbox";
             this.TeacherIdtxtbox.Size = new System.Drawing.Size(170, 20);
             this.TeacherIdtxtbox.TabIndex = 62;
@@ -176,7 +177,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Location = new System.Drawing.Point(487, 156);
+            this.button1.Location = new System.Drawing.Point(487, 92);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 23);
             this.button1.TabIndex = 75;
@@ -184,33 +185,11 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // editteacherbutton
-            // 
-            this.editteacherbutton.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.editteacherbutton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.editteacherbutton.Location = new System.Drawing.Point(487, 89);
-            this.editteacherbutton.Name = "editteacherbutton";
-            this.editteacherbutton.Size = new System.Drawing.Size(139, 23);
-            this.editteacherbutton.TabIndex = 78;
-            this.editteacherbutton.Text = "Edit Teacher Profile";
-            this.editteacherbutton.UseVisualStyleBackColor = false;
-            // 
-            // deleteteacherbutton2
-            // 
-            this.deleteteacherbutton2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.deleteteacherbutton2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.deleteteacherbutton2.Location = new System.Drawing.Point(487, 127);
-            this.deleteteacherbutton2.Name = "deleteteacherbutton2";
-            this.deleteteacherbutton2.Size = new System.Drawing.Size(139, 23);
-            this.deleteteacherbutton2.TabIndex = 79;
-            this.deleteteacherbutton2.Text = "Delete Teacher Profile";
-            this.deleteteacherbutton2.UseVisualStyleBackColor = false;
-            // 
             // editstudentbutton2
             // 
             this.editstudentbutton2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.editstudentbutton2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.editstudentbutton2.Location = new System.Drawing.Point(527, 232);
+            this.editstudentbutton2.Location = new System.Drawing.Point(535, 262);
             this.editstudentbutton2.Name = "editstudentbutton2";
             this.editstudentbutton2.Size = new System.Drawing.Size(131, 23);
             this.editstudentbutton2.TabIndex = 80;
@@ -222,32 +201,65 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label5.Location = new System.Drawing.Point(371, 205);
+            this.label5.Location = new System.Drawing.Point(349, 235);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 13);
+            this.label5.Size = new System.Drawing.Size(184, 13);
             this.label5.TabIndex = 82;
-            this.label5.Text = "REGISTER NUMBER";
+            this.label5.Text = "REGISTER NUMBER OF STUDENT";
             // 
             // registertextBox
             // 
             this.registertextBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.registertextBox.Location = new System.Drawing.Point(502, 198);
+            this.registertextBox.Location = new System.Drawing.Point(535, 232);
             this.registertextBox.Margin = new System.Windows.Forms.Padding(2);
             this.registertextBox.Name = "registertextBox";
             this.registertextBox.Size = new System.Drawing.Size(124, 20);
             this.registertextBox.TabIndex = 83;
+            // 
+            // teacherregistertextbox
+            // 
+            this.teacherregistertextbox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.teacherregistertextbox.Location = new System.Drawing.Point(535, 140);
+            this.teacherregistertextbox.Margin = new System.Windows.Forms.Padding(2);
+            this.teacherregistertextbox.Name = "teacherregistertextbox";
+            this.teacherregistertextbox.Size = new System.Drawing.Size(124, 20);
+            this.teacherregistertextbox.TabIndex = 86;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label6.Location = new System.Drawing.Point(337, 140);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(191, 13);
+            this.label6.TabIndex = 85;
+            this.label6.Text = "REGISTER NUMBER OF TEACHERR\r\n";
+            // 
+            // editteacherbutton
+            // 
+            this.editteacherbutton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.editteacherbutton.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.editteacherbutton.Location = new System.Drawing.Point(535, 173);
+            this.editteacherbutton.Name = "editteacherbutton";
+            this.editteacherbutton.Size = new System.Drawing.Size(124, 23);
+            this.editteacherbutton.TabIndex = 84;
+            this.editteacherbutton.Text = "Search Teacher Profile";
+            this.editteacherbutton.UseVisualStyleBackColor = false;
+            this.editteacherbutton.Click += new System.EventHandler(this.editteacherbutton_Click);
             // 
             // AdminPortalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 424);
+            this.Controls.Add(this.teacherregistertextbox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.editteacherbutton);
             this.Controls.Add(this.registertextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.editstudentbutton2);
-            this.Controls.Add(this.deleteteacherbutton2);
-            this.Controls.Add(this.editteacherbutton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.AddTeacher);
             this.Controls.Add(this.label3);
@@ -261,7 +273,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminPortalForm";
             this.Text = "AdminPortalForm";
             this.ResumeLayout(false);
@@ -284,10 +296,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button AddTeacher;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button editteacherbutton;
-        private System.Windows.Forms.Button deleteteacherbutton2;
         private System.Windows.Forms.Button editstudentbutton2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox registertextBox;
+        private System.Windows.Forms.TextBox teacherregistertextbox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button editteacherbutton;
     }
 }

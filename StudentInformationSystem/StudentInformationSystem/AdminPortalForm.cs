@@ -15,6 +15,7 @@ namespace StudentInformationSystem
     public partial class AdminPortalForm : Form
     {
         private  AdminService _service;
+        private string _Id;
         
         public AdminPortalForm(string emailId)
         {
@@ -43,6 +44,14 @@ namespace StudentInformationSystem
         {
             EditStudentform edit = new EditStudentform(registertextBox.Text);
             edit.Show();
+        }
+
+        private void editteacherbutton_Click(object sender, EventArgs e)
+        {
+            _Id = teacherregistertextbox.Text;
+            editteacher form = new editteacher(_Id);
+            form.Show();
+
         }
     }
 }

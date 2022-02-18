@@ -70,6 +70,12 @@
     <Compile Include="EditStudentform.Designer.cs">
       <DependentUpon>EditStudentform.cs</DependentUpon>
     </Compile>
+    <Compile Include="editteacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editteacher.Designer.cs">
+      <DependentUpon>editteacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,7 @@
     <Compile Include="Services\ConnectionManager.cs" />
     <Compile Include="Services\DeleteStudentService.cs" />
     <Compile Include="Services\EditStudentServices.cs" />
+    <Compile Include="Services\EditTeacherServices.cs" />
     <Compile Include="Services\LoginClass.cs" />
     <Compile Include="Services\PasswordResetClass.cs" />
     <Compile Include="Services\StudentDetailsService.cs" />
@@ -130,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditStudentform.resx">
       <DependentUpon>EditStudentform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editteacher.resx">
+      <DependentUpon>editteacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -70,3 +70,6 @@ C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSyst
 C:\Users\91965\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.EditStudentform.resources
 C:\Users\USER\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.addmark.resources
 C:\Users\840G3\OneDrive\Desktop\Case Study\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.AddTeacher.resources
+C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.AssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.AddTeacher.resources
+C:\Users\Acer\Documents\GitHub\Student-Management-System\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.editteacher.resources
