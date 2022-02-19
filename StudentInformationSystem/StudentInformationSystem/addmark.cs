@@ -15,7 +15,8 @@ namespace StudentInformationSystem
     public partial class addmark : Form
     {
         private int currentsem;
-        public addmark(string registerNumber,string currentsemester)
+        private Form previouswin;
+        public addmark(string registerNumber,string currentsemester,Form PreviousWindow)
         {
             InitializeComponent();
             regtextbox.Text= registerNumber;
@@ -24,6 +25,7 @@ namespace StudentInformationSystem
             {
                 SemcomboBox.Items.Add(i.ToString());
             }
+            this.previouswin = PreviousWindow;
             
         }
 
@@ -44,8 +46,7 @@ namespace StudentInformationSystem
             }
              
             if (i != 0)
-                MessageBox.Show("marks added!!!!!");
-            this.Close();
+                MessageBox.Show("marks added!");
         }
 
         private void SemcomboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +75,12 @@ namespace StudentInformationSystem
                 sub2textBox.Text = "Android";
                 sub3textBox.Text = "Java";
             }
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            previouswin.Show();
+            Hide();
         }
     }
 }

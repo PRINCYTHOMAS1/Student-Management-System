@@ -45,6 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // subject1
@@ -79,31 +80,31 @@
             // 
             // mark1txtbox
             // 
-            this.mark1txtbox.Location = new System.Drawing.Point(423, 113);
+            this.mark1txtbox.Location = new System.Drawing.Point(500, 101);
             this.mark1txtbox.Name = "mark1txtbox";
-            this.mark1txtbox.Size = new System.Drawing.Size(46, 20);
+            this.mark1txtbox.Size = new System.Drawing.Size(120, 20);
             this.mark1txtbox.TabIndex = 3;
             // 
             // mark2txtbox
             // 
-            this.mark2txtbox.Location = new System.Drawing.Point(423, 159);
+            this.mark2txtbox.Location = new System.Drawing.Point(500, 150);
             this.mark2txtbox.Name = "mark2txtbox";
-            this.mark2txtbox.Size = new System.Drawing.Size(46, 20);
+            this.mark2txtbox.Size = new System.Drawing.Size(120, 20);
             this.mark2txtbox.TabIndex = 4;
             // 
             // mark3txtbox
             // 
-            this.mark3txtbox.Location = new System.Drawing.Point(423, 208);
+            this.mark3txtbox.Location = new System.Drawing.Point(500, 206);
             this.mark3txtbox.Name = "mark3txtbox";
-            this.mark3txtbox.Size = new System.Drawing.Size(46, 20);
+            this.mark3txtbox.Size = new System.Drawing.Size(120, 20);
             this.mark3txtbox.TabIndex = 5;
             // 
             // markbutton
             // 
             this.markbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.markbutton.Location = new System.Drawing.Point(394, 289);
+            this.markbutton.Location = new System.Drawing.Point(424, 276);
             this.markbutton.Name = "markbutton";
-            this.markbutton.Size = new System.Drawing.Size(75, 30);
+            this.markbutton.Size = new System.Drawing.Size(196, 42);
             this.markbutton.TabIndex = 6;
             this.markbutton.Text = "Submit";
             this.markbutton.UseVisualStyleBackColor = true;
@@ -170,7 +171,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(347, 113);
+            this.label2.Location = new System.Drawing.Point(432, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 15;
@@ -180,7 +181,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(347, 159);
+            this.label3.Location = new System.Drawing.Point(432, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 16;
@@ -190,18 +191,31 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(347, 206);
+            this.label4.Location = new System.Drawing.Point(432, 208);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 17;
             this.label4.Text = "Mark";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Location = new System.Drawing.Point(469, 22);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(129, 16);
+            this.linkLabel2.TabIndex = 19;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "PREVIOUS PAGE";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // addmark
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(519, 361);
+            this.ClientSize = new System.Drawing.Size(646, 361);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -247,5 +261,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }

@@ -32,19 +32,21 @@ namespace StudentInformationSystem.Services
             return teacherView;
         }
         public int EditTeacherService(TeacherViewModel editteacher)
+
         {
             ConnectionManager.EnsureConnection();
-            var sql = $"UPDATE TeacherDetails SET TeacherName = @TeacherName,TeacherId=@TeacherId," +
-                $"PhoneNumber=@PhoneNumber,EmailId=@EmailId,Department=@Department,Course=@Course";
-            var command = new SqlCommand(sql, ConnectionManager.connection);
-            command.Parameters.AddWithValue(@"TeacherName", editteacher.TeacherName);
-            command.Parameters.AddWithValue(@"TeacherId", editteacher.TeacherId);
-            command.Parameters.AddWithValue(@"PhoneNumber", editteacher.PhoneNumber);
-            command.Parameters.AddWithValue(@"EmailId", editteacher.Emailid);
-            command.Parameters.AddWithValue(@"Department", editteacher.Department);
-            command.Parameters.AddWithValue(@"course", editteacher.Course);
-            int i = command.ExecuteNonQuery();
-            return i;
+                var sql = $"UPDATE TeacherDetails SET TeacherName = @TeacherName,TeacherId=@TeacherId," +
+                    $"PhoneNumber=@PhoneNumber,EmailId=@EmailId,Department=@Department,Course=@Course WHERE TeacherId=@TeacherId   ";
+                var command = new SqlCommand(sql, ConnectionManager.connection);
+                command.Parameters.AddWithValue(@"TeacherName", editteacher.TeacherName);
+                command.Parameters.AddWithValue(@"TeacherId", editteacher.TeacherId);
+                command.Parameters.AddWithValue(@"PhoneNumber", editteacher.PhoneNumber);
+                command.Parameters.AddWithValue(@"EmailId", editteacher.Emailid);
+                command.Parameters.AddWithValue(@"Department", editteacher.Department);
+                command.Parameters.AddWithValue(@"course", editteacher.Course);
+                int i = command.ExecuteNonQuery();
+                return i;
+           
         }
     }
 }

@@ -14,9 +14,11 @@ namespace StudentInformationSystem
 {
     public partial class AddTeacher : Form
     {
-        public AddTeacher()
+        private Form previousWindow;
+        public AddTeacher( Form previouswindow)
         {
             InitializeComponent();
+            this.previousWindow = previouswindow;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -26,7 +28,7 @@ namespace StudentInformationSystem
             TeacherViewModel.TeacherId = teacheridtxtbox.Text;
             TeacherViewModel.Emailid = emailidtxtbox.Text;
             TeacherViewModel.PhoneNumber =Convert.ToInt64(phnnotxtbox.Text);
-            TeacherViewModel.Department = departmenttxtbox.Text;
+            TeacherViewModel.Department = comboBox1.SelectedItem.ToString();
             TeacherViewModel.Course = course.Text;
             AddTeacherService addteacher=new AddTeacherService();
             int i = addteacher.AddTeacherServices(TeacherViewModel,passwordtextBox.Text);
@@ -34,7 +36,12 @@ namespace StudentInformationSystem
             {
                 MessageBox.Show("Teacher Profile Added");
             }
-            this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            previousWindow.Show();
+            Hide();
         }
     }
 }

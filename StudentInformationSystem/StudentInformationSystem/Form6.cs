@@ -37,15 +37,36 @@ namespace StudentInformationSystem
 
         private void AddnewStudentBtn_Click(object sender, EventArgs e)
         {
-            AddStudentForm addstudent = new AddStudentForm();
+            AddStudentForm addstudent = new AddStudentForm(_email, this);
             addstudent.Show();
+            Hide();
         }
 
         private void Viewstudentbtn_Click(object sender, EventArgs e)
         {
             _RegNo = RegNoTxtbox.Text;
-            EditStudentform form = new EditStudentform(_RegNo);
+            EditStudentform form = new EditStudentform(_RegNo,this);
             form.Show();
+        }
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Are you sure you want to Log Out.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (res == DialogResult.Yes)
+            {
+                LoginForm login = new LoginForm();
+                login.Show();
+                this.Close();
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegNoTxtbox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

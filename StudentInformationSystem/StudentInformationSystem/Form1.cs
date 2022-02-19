@@ -66,12 +66,10 @@ namespace StudentInformationSystem
         {
             System.Windows.Forms.Label lbl=new System.Windows.Forms.Label();
             this.Controls.Add(lbl);
-            lbl.Top = loc * 15;
-            lbl.Left = loc * 50;
+            lbl.Top = loc * 13;
+            lbl.Left = loc * 42;
             lbl.Width = 1000;
             lbl.Text = "Enter your Email Id as your user Id!!! ";
         }
-
-        
     }
 }

@@ -14,9 +14,14 @@ namespace StudentInformationSystem
 {
     public partial class AddStudentForm : Form
     {
-        public AddStudentForm()
+        private string Email;
+        private readonly Form previousWindow;
+
+        public AddStudentForm(string email, Form previousWindow)
         {
             InitializeComponent();
+            Email = email;
+            this.previousWindow = previousWindow;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -26,13 +31,9 @@ namespace StudentInformationSystem
             studentDetailsModel.StudentName = Nametxtbox.Text;
             studentDetailsModel.RegisterNumber = regnotxtbox.Text;
             studentDetailsModel.Emailid = emailidtxtbox.Text;
-            try
-            {
-                studentDetailsModel.PhoneNumber = Convert.ToInt64(emailidtxtbox.Text);
-            }
-            catch (Exception ) { }
-            studentDetailsModel.Department = departmenttxtbox.Text;
-            studentDetailsModel.Course = branchtxtbox.Text;
+            studentDetailsModel.PhoneNumber = Convert.ToInt64(phnnotxtbox.Text);
+            studentDetailsModel.Department = depcomboBox.SelectedItem.ToString();
+            studentDetailsModel.Course =CoursecomboBox.SelectedItem.ToString();
             studentDetailsModel.StaffAdvisor = staffadvisortxtbox.Text;
             studentDetailsModel.CurrentSemester = Convert.ToInt32(currentsemcomboBox.SelectedItem);
 
@@ -45,7 +46,27 @@ namespace StudentInformationSystem
             AddStudentService newservice = new AddStudentService();
             newservice.AddDataLoginTable(login);
             newservice.AddStudentServices(studentDetailsModel);
-           
+        }
+
+        private void depcomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CoursecomboBox.Items.Clear();   
+            if (depcomboBox.SelectedItem.ToString() == "Computer Science")
+            {
+                CoursecomboBox.Items.Add("Computer Science and Engineering");
+                CoursecomboBox.Items.Add("BSC computer Science");
+            }
+            if (depcomboBox.SelectedItem.ToString() == "Electronics")
+            {
+                CoursecomboBox.Items.Add("Electronics and communication Engineering");
+                CoursecomboBox.Items.Add("Electrical and Electronics Engineering");
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            previousWindow.Show();
+            this.Close();
         }
     }
 }

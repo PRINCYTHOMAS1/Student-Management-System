@@ -88,7 +88,23 @@ namespace StudentInformationSystem
 
         private void SemcomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            sub1textBox.Clear();
+            sub2textBox.Clear();
+            sub3textBox.Clear();
+            mark1textBox.Clear();
+            mark2txtbox.Clear();
+            mark3textBox.Clear();
+        }
+
+        private void Logout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Are you sure you want to Log Out.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (res == DialogResult.Yes)
+            {
+                LoginForm login = new LoginForm();
+                login.Show();
+                this.Close();
+            }
         }
     }
 }
