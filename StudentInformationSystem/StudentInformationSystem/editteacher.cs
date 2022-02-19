@@ -41,6 +41,15 @@ namespace StudentInformationSystem
             if (i != 0)
                 MessageBox.Show("Teacher Details Updated");
         }
+
+        private void Deleteteacherbtn_Click(object sender, EventArgs e)
+        {
+            DeleteTeacherService teacherService = new DeleteTeacherService();
+            int i = teacherService.DeleteTeacher(emailidteachertxtbox.Text);
+            if (i != 0)
+                MessageBox.Show($"Teacher with Teacher Id {IdteacherTxtbox.Text} Deleted!!!!!!!");
+            this.Close();
+        }
     }
 
 }
