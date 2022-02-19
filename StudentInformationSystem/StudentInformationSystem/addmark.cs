@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentInformationSystem.Models;
+using StudentInformationSystem.Services;
 
 namespace StudentInformationSystem
 {
@@ -16,7 +18,9 @@ namespace StudentInformationSystem
     {
         private int currentsem;
         private Form previouswin;
-        public addmark(string registerNumber,string currentsemester,Form PreviousWindow)
+        private string _course;
+        private string _department;
+        public addmark(string registerNumber,string currentsemester,Form PreviousWindow,string course,string department)
         {
             InitializeComponent();
             regtextbox.Text= registerNumber;
@@ -26,7 +30,8 @@ namespace StudentInformationSystem
                 SemcomboBox.Items.Add(i.ToString());
             }
             this.previouswin = PreviousWindow;
-            
+            _course= course;
+            _department = department;
         }
 
         private void markbutton_Click(object sender, EventArgs e)
@@ -51,29 +56,40 @@ namespace StudentInformationSystem
 
         private void SemcomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            sub1textBox.Clear();
+            sub2textBox.Clear();
+            sub3textBox.Clear();
+            FetchSubjectName subname=new FetchSubjectName();
+            SubjectNameClass newsub=new SubjectNameClass();
+            
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 1)
             {
-                sub1textBox.Text = "C ++";
-                sub2textBox.Text = "Python";
-                sub3textBox.Text = "Java";
+                newsub=subname.GetSubjectNameByRegNo(_course,_department,1);
+                sub1textBox.Text = newsub.subjectName1;
+                sub2textBox.Text = newsub.subjectName2;
+                sub3textBox.Text = newsub.subjectName3;
             }
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 2)
             {
-                sub1textBox.Text = "PHP";
-                sub2textBox.Text = "HTML";
-                sub3textBox.Text = "CSS";
+                newsub = subname.GetSubjectNameByRegNo(_course, _department, 2);
+                sub1textBox.Text = newsub.subjectName1;
+                sub2textBox.Text = newsub.subjectName2;
+                sub3textBox.Text = newsub.subjectName3;
+
             }
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 3)
             {
-                sub1textBox.Text = "C Sharp";
-                sub2textBox.Text = "Android";
-                sub3textBox.Text = "Java";
+                newsub = subname.GetSubjectNameByRegNo(_course, _department, 3);
+                sub1textBox.Text = newsub.subjectName1;
+                sub2textBox.Text = newsub.subjectName2;
+                sub3textBox.Text = newsub.subjectName3;
             }
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 4)
             {
-                sub1textBox.Text = "Cloud Computing";
-                sub2textBox.Text = "Android";
-                sub3textBox.Text = "Java";
+                newsub = subname.GetSubjectNameByRegNo(_course, _department, 4);
+                sub1textBox.Text = newsub.subjectName1;
+                sub2textBox.Text = newsub.subjectName2;
+                sub3textBox.Text = newsub.subjectName3;
             }
         }
 

@@ -54,7 +54,8 @@ namespace StudentInformationSystem
 
         private void AddMarksBtn_Click(object sender, EventArgs e)
         {
-            new addmark(RegNoTxtbox.Text,currentsemtxtbox.Text,this).Show();
+            new addmark(RegNoTxtbox.Text,currentsemtxtbox.Text,this,coursecomboBox2.SelectedItem.ToString(),depcomboBox1.SelectedItem.ToString()).Show();
+               
         }
 
         private void Deletestudentbtn_Click(object sender, EventArgs e)

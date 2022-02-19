@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.useridtxtbox = new System.Windows.Forms.TextBox();
@@ -38,22 +37,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LOGIN";
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(185, 249);
+            this.linkLabel1.Location = new System.Drawing.Point(257, 249);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(150, 21);
             this.linkLabel1.TabIndex = 1;
@@ -65,7 +53,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(124, 215);
+            this.button1.Location = new System.Drawing.Point(189, 215);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(283, 31);
             this.button1.TabIndex = 2;
@@ -75,7 +63,7 @@
             // 
             // useridtxtbox
             // 
-            this.useridtxtbox.Location = new System.Drawing.Point(229, 130);
+            this.useridtxtbox.Location = new System.Drawing.Point(238, 114);
             this.useridtxtbox.Name = "useridtxtbox";
             this.useridtxtbox.Size = new System.Drawing.Size(178, 20);
             this.useridtxtbox.TabIndex = 3;
@@ -84,7 +72,7 @@
             // 
             // Passwordtxtbox
             // 
-            this.Passwordtxtbox.Location = new System.Drawing.Point(229, 173);
+            this.Passwordtxtbox.Location = new System.Drawing.Point(238, 173);
             this.Passwordtxtbox.Name = "Passwordtxtbox";
             this.Passwordtxtbox.PasswordChar = '*';
             this.Passwordtxtbox.Size = new System.Drawing.Size(178, 20);
@@ -95,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(119, 127);
+            this.label2.Location = new System.Drawing.Point(149, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 21);
             this.label2.TabIndex = 5;
@@ -105,7 +93,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(119, 172);
+            this.label3.Location = new System.Drawing.Point(134, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 21);
             this.label3.TabIndex = 6;
@@ -116,7 +104,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(12, 27);
+            this.label4.Location = new System.Drawing.Point(5, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(620, 31);
             this.label4.TabIndex = 7;
@@ -135,7 +123,6 @@
             this.Controls.Add(this.useridtxtbox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -146,8 +133,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox useridtxtbox;

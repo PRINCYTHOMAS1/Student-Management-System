@@ -23,19 +23,24 @@ namespace StudentInformationSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TeacherViewModel TeacherViewModel = new TeacherViewModel();
-            TeacherViewModel.TeacherName= Nametxtbox.Text;
-            TeacherViewModel.TeacherId = teacheridtxtbox.Text;
-            TeacherViewModel.Emailid = emailidtxtbox.Text;
-            TeacherViewModel.PhoneNumber =Convert.ToInt64(phnnotxtbox.Text);
-            TeacherViewModel.Department = comboBox1.SelectedItem.ToString();
-            TeacherViewModel.Course = course.Text;
-            AddTeacherService addteacher=new AddTeacherService();
-            int i = addteacher.AddTeacherServices(TeacherViewModel,passwordtextBox.Text);
-            if(i!=0)
+            try
             {
-                MessageBox.Show("Teacher Profile Added");
-            }
+                TeacherViewModel TeacherViewModel = new TeacherViewModel();
+                TeacherViewModel.TeacherName = Nametxtbox.Text;
+                TeacherViewModel.TeacherId = teacheridtxtbox.Text;
+                TeacherViewModel.Emailid = emailidtxtbox.Text;
+                TeacherViewModel.PhoneNumber = Convert.ToInt64(phnnotxtbox.Text);
+                TeacherViewModel.Department = comboBox1.SelectedItem.ToString();
+                TeacherViewModel.Course = course.Text;
+                AddTeacherService addteacher = new AddTeacherService();
+                int i = addteacher.AddTeacherServices(TeacherViewModel, passwordtextBox.Text);
+                if (i != 0)
+                {
+                    MessageBox.Show("Teacher Profile Added");
+                }
+                if (i == 0)
+                    MessageBox.Show("Cannot enter null values");
+            }catch (Exception) { MessageBox.Show("Cannot enter null values"); }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

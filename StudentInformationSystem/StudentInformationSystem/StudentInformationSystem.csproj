@@ -110,6 +110,7 @@
     <Compile Include="Models\AdminDetails.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\StudentDetailsModel.cs" />
+    <Compile Include="Models\SubjectNameClass.cs" />
     <Compile Include="Models\TeacherViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Services\DeleteTeacherService.cs" />
     <Compile Include="Services\EditStudentServices.cs" />
     <Compile Include="Services\EditTeacherServices.cs" />
+    <Compile Include="Services\FetchSubjectName.cs" />
     <Compile Include="Services\LoginClass.cs" />
     <Compile Include="Services\PasswordResetClass.cs" />
     <Compile Include="Services\StudentDetailsService.cs" />
