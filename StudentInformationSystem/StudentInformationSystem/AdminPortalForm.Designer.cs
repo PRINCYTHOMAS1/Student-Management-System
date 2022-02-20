@@ -49,10 +49,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.editstudentbutton2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -277,10 +275,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.registertextBox);
-            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.editstudentbutton2);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.button1);
@@ -288,6 +284,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(414, 144);
             this.panel2.TabIndex = 88;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button2.Location = new System.Drawing.Point(15, 55);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(391, 32);
+            this.button2.TabIndex = 91;
+            this.button2.Text = "SORT STUDENTS";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // linkLabel1
             // 
@@ -300,42 +309,6 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "LOG OUT";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Department",
-            "Course",
-            "Semester"});
-            this.comboBox1.Location = new System.Drawing.Point(169, 57);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 21);
-            this.comboBox1.TabIndex = 90;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Location = new System.Drawing.Point(321, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 23);
-            this.button2.TabIndex = 91;
-            this.button2.Text = "SORT";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 62);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(136, 16);
-            this.label8.TabIndex = 92;
-            this.label8.Text = "SORT STUDENTS";
             // 
             // AdminPortalForm
             // 
@@ -394,8 +367,6 @@
         private System.Windows.Forms.Button editstudentbutton2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

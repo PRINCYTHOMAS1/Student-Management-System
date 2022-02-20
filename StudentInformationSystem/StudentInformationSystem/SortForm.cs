@@ -12,25 +12,35 @@ namespace StudentInformationSystem
 {
     public partial class SortForm : Form
     {
-        private string _sortby;
         private Form _preWindow;
-        public SortForm( string sortby,Form PreviousWindow)
+        public SortForm(Form PreviousWindow)
         {
             InitializeComponent();
             _preWindow = PreviousWindow;
-            _sortby = sortby;
-            if (_sortby == "Department")
-                Sortlabel.Text = "Department Name:";
-            if (_sortby == "Course")
-                Sortlabel.Text = "Course Name";
-            if (_sortby == "Semester")
-                Sortlabel.Text = "Semester ";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             _preWindow.Show();
             Hide();
+        }
+        private void viewbutton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void depcomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (depcomboBox.SelectedItem.ToString() == "Computer Science")
+            {
+                sortcomboBox.Items.Add("Computer Science and Engineering");
+                sortcomboBox.Items.Add("IT");
+            }
+            if (depcomboBox.SelectedItem.ToString() == "Electronics")
+            {
+                sortcomboBox.Items.Add("Electrical and Electronics Engineering");
+                sortcomboBox.Items.Add("Electronics and communication Engineering");
+            }
         }
     }
 }

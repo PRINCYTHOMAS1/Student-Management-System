@@ -69,7 +69,7 @@ namespace StudentInformationSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SortForm form = new SortForm(comboBox1.SelectedItem.ToString(),this);
+            SortForm form = new SortForm(this);
             form.Show();
         }
     }
