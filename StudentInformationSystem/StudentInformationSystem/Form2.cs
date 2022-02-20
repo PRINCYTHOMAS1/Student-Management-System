@@ -46,6 +46,7 @@ namespace StudentInformationSystem
             }
             LoginForm loginpage=new LoginForm();
             loginpage.Show();
+            this.Close();
         }
         int loc = 10;
         private void passwordtxt_TextChanged(object sender, EventArgs e)

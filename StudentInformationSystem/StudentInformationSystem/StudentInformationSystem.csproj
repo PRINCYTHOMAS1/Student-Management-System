@@ -129,6 +129,12 @@
     <Compile Include="Services\StudentDetailsService.cs" />
     <Compile Include="Services\TeacherViewProfileService.cs" />
     <Compile Include="Services\ViewMarksService.cs" />
+    <Compile Include="SortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortForm.Designer.cs">
+      <DependentUpon>SortForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addmark.resx">
       <DependentUpon>addmark.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +175,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SortForm.resx">
+      <DependentUpon>SortForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

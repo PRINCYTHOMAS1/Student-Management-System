@@ -42,48 +42,55 @@ namespace StudentInformationSystem
             registernumber = RegNoTxtbox.Text;
             ViewMarksService mark = new ViewMarksService();
             AddMarks model = null;
+            FetchSubjectName fetch=null;
+            SubjectNameClass submodel=null;
+
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 1)
             {
+                fetch = new FetchSubjectName();
+                submodel=new SubjectNameClass();
+                submodel=fetch.GetSubjectNameByRegNo(branchtxtbox.Text, departmenttxtbox.Text, 1);
                 model = new AddMarks();
-                sub1textBox.Text = "C ++";
-                sub2textBox.Text = "Python";
-                sub3textBox.Text = "Java";
                 model = mark.ViewMarks(registernumber, 1);
             }
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 2)
-            { 
+            {
+                fetch = new FetchSubjectName();
+                submodel = new SubjectNameClass();
+                submodel = fetch.GetSubjectNameByRegNo(branchtxtbox.Text, departmenttxtbox.Text, 2);
                 model = new AddMarks();
-                sub1textBox.Text = "PHP";
-                sub2textBox.Text = "HTML";
-                sub3textBox.Text = "CSS";
                 model = mark.ViewMarks(registernumber, 2);
             }
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 3)
             {
+                fetch = new FetchSubjectName();
+                submodel = new SubjectNameClass();
+                submodel = fetch.GetSubjectNameByRegNo(branchtxtbox.Text, departmenttxtbox.Text, 3);
                 model = new AddMarks();
-                sub1textBox.Text = "C Sharp";
-                sub2textBox.Text = "Android";
-                sub3textBox.Text = "Cloud Computing";
                 model = mark.ViewMarks(registernumber, 3);
             }
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 4)
             {
+                fetch = new FetchSubjectName();
+                submodel = new SubjectNameClass();
+                submodel = fetch.GetSubjectNameByRegNo(branchtxtbox.Text, departmenttxtbox.Text, 4);
                 model = new AddMarks();
-                sub1textBox.Text = "Web Development";
-                sub2textBox.Text = "DBMS";
-                sub3textBox.Text = "DOT NET";
                 model = mark.ViewMarks(registernumber, 4);
             }
-            if(model == null)
+            if(model == null || submodel==null)
             {
                 MessageBox.Show("The mark list is empty.");
                 return;
             }
+            sub1textBox.Text = submodel.subjectName1;
+            sub2textBox.Text = submodel.subjectName2;
+            sub3textBox.Text = submodel.subjectName3;
             SemcomboBox.SelectedItem = model.semester.ToString();
             RegNoTxtbox.Text = model.RegisterNumber;
             mark1textBox.Text = model.Subject1.ToString();
             mark2txtbox.Text = model.Subject2.ToString();
             mark3textBox.Text = model.Subject3.ToString();
+
         }
 
         private void SemcomboBox_SelectedIndexChanged(object sender, EventArgs e)

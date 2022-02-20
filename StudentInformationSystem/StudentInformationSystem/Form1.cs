@@ -55,6 +55,7 @@ namespace StudentInformationSystem
                 AdminPortalForm adminportal= new AdminPortalForm(emailId);
                 adminportal.Show();
             }
+            
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

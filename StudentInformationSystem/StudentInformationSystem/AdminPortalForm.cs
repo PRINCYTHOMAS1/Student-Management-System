@@ -32,18 +32,21 @@ namespace StudentInformationSystem
         private void AddTeacher_Click(object sender, EventArgs e)
         {
             new AddTeacher(this).Show();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             AddStudentForm addStudentForm = new AddStudentForm(emailidtxtbox.Text,this);
             addStudentForm.Show();
+            
         }
 
         private void editstudentbutton2_Click(object sender, EventArgs e)
         {
             EditStudentform edit = new EditStudentform(registertextBox.Text,this);
             edit.Show();
+            
         }
 
         private void searchteacherbtn_click(object sender, EventArgs e)
@@ -62,6 +65,12 @@ namespace StudentInformationSystem
                 login.Show();
                 Hide();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SortForm form = new SortForm(comboBox1.SelectedItem.ToString(),this);
+            form.Show();
         }
     }
 }

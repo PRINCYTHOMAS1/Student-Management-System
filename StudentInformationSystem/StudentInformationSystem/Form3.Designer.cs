@@ -275,7 +275,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(70, 16);
             this.label15.TabIndex = 37;
-            this.label15.Text = "BRANCH";
+            this.label15.Text = "COURSE";
             // 
             // branchtxtbox
             // 
