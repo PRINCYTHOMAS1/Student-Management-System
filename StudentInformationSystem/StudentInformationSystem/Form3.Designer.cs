@@ -435,7 +435,7 @@
             // 
             this.Logout.AutoSize = true;
             this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logout.Location = new System.Drawing.Point(549, 24);
+            this.Logout.Location = new System.Drawing.Point(627, 24);
             this.Logout.Name = "Logout";
             this.Logout.Size = new System.Drawing.Size(73, 16);
             this.Logout.TabIndex = 52;

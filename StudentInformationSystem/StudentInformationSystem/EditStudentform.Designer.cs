@@ -253,6 +253,7 @@
             this.depcomboBox1.Name = "depcomboBox1";
             this.depcomboBox1.Size = new System.Drawing.Size(159, 21);
             this.depcomboBox1.TabIndex = 77;
+            this.depcomboBox1.SelectedIndexChanged += new System.EventHandler(this.depcomboBox1_SelectedIndexChanged);
             // 
             // coursecomboBox2
             // 

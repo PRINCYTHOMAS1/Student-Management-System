@@ -39,7 +39,7 @@ namespace StudentInformationSystem
                     MessageBox.Show("Teacher Profile Added");
                 }
                 if (i == 0)
-                    MessageBox.Show("Cannot enter null values");
+                    MessageBox.Show("teacher ID and Email already exists");
             }catch (Exception) { MessageBox.Show("Cannot enter null values"); }
         }
 

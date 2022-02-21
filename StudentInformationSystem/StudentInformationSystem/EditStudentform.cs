@@ -33,16 +33,6 @@ namespace StudentInformationSystem
             studentmodel.Emailid= emailidtxtbox.Text;
             studentmodel.PhoneNumber = Convert.ToInt64(phnnotxtbox.Text);
             studentmodel.Department= depcomboBox1.SelectedItem.ToString();
-            if (depcomboBox1.SelectedItem.ToString() == "Computer Science")
-            {
-                coursecomboBox2.Items.Add("Computer Science and Engineering");
-                coursecomboBox2.Items.Add("BSC computer Science");
-            }
-            if (depcomboBox1.SelectedItem.ToString() == "Electronics")
-            {
-                coursecomboBox2.Items.Add("Electronics and communication Engineering");
-                coursecomboBox2.Items.Add("Electrical and Electronics Engineering");
-            }
             studentmodel.Course= coursecomboBox2.SelectedItem.ToString();
             studentmodel.StaffAdvisor= staffadvisortxtbox.Text;
             studentmodel.CurrentSemester=Convert.ToInt32(currentsemtxtbox.Text);
@@ -55,7 +45,7 @@ namespace StudentInformationSystem
         private void AddMarksBtn_Click(object sender, EventArgs e)
         {
             new addmark(RegNoTxtbox.Text,currentsemtxtbox.Text,this,coursecomboBox2.SelectedItem.ToString(),depcomboBox1.SelectedItem.ToString()).Show();
-               
+             
         }
 
         private void Deletestudentbtn_Click(object sender, EventArgs e)
@@ -90,11 +80,11 @@ namespace StudentInformationSystem
             if (depcomboBox1.SelectedItem.ToString() == "Computer Science")
             {
                 coursecomboBox2.Items.Add("Computer Science and Engineering");
-                coursecomboBox2.Items.Add("BSC computer Science");
+                coursecomboBox2.Items.Add("IT");
             }
             if (depcomboBox1.SelectedItem.ToString() == "Electronics")
             {
-                coursecomboBox2.Items.Add("Electronics and communication Engineering");
+                coursecomboBox2.Items.Add("Electronics and Communication Engineering");
                 coursecomboBox2.Items.Add("Electrical and Electronics Engineering");
             }
             coursecomboBox2.SelectedItem = model.Course;
@@ -107,6 +97,21 @@ namespace StudentInformationSystem
         {
             PreviousWindow.Show();
             Hide();
+        }
+
+        private void depcomboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            coursecomboBox2.Items.Clear();
+            if (depcomboBox1.SelectedItem.ToString() == "Computer Science")
+            {
+                coursecomboBox2.Items.Add("Computer Science and Engineering");
+                coursecomboBox2.Items.Add("IT");
+            }
+            if (depcomboBox1.SelectedItem.ToString() == "Electronics")
+            {
+                coursecomboBox2.Items.Add("Electronics and Communication Engineering");
+                coursecomboBox2.Items.Add("Electrical and Electronics Engineering");
+            }
         }
     }
 }

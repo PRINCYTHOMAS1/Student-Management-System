@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentInformationSystem.Models;
+
 
 namespace StudentInformationSystem
 {
@@ -26,21 +28,30 @@ namespace StudentInformationSystem
         }
         private void viewbutton1_Click(object sender, EventArgs e)
         {
-            
-        }
+            SortingClass sort=new SortingClass();
+            StudentDetailsModel []student=new StudentDetailsModel[100];
+            if (sortcomboBox.SelectedIndex== -1 && comboBox2.SelectedIndex== -1)
+            {
+                student = sort.Sorting(depcomboBox.SelectedItem.ToString());
+                dataGridView1.DataSource = student;
+            }
+            if (depcomboBox.SelectedIndex == -1 && comboBox2.SelectedIndex == -1)
+            {
+                student = sort.Sorting(sortcomboBox.SelectedItem.ToString());
+                dataGridView1.DataSource = student;
+            }
+            if (depcomboBox.SelectedIndex == -1 && sortcomboBox.SelectedIndex == -1)
+            {
+                student = sort.Sorting(comboBox2.SelectedItem.ToString());
+                dataGridView1.DataSource = student;
+            }
+            if (depcomboBox.SelectedIndex != -1 && sortcomboBox.SelectedIndex != -1 && comboBox2.SelectedIndex!=-1)
+            {
+                int sem = Convert.ToInt32(comboBox2.SelectedItem);
+                student = sort.Sorting(depcomboBox.SelectedItem.ToString(),sortcomboBox.SelectedItem.ToString(),sem);
+                dataGridView1.DataSource = student;
+            }
 
-        private void depcomboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (depcomboBox.SelectedItem.ToString() == "Computer Science")
-            {
-                sortcomboBox.Items.Add("Computer Science and Engineering");
-                sortcomboBox.Items.Add("IT");
-            }
-            if (depcomboBox.SelectedItem.ToString() == "Electronics")
-            {
-                sortcomboBox.Items.Add("Electrical and Electronics Engineering");
-                sortcomboBox.Items.Add("Electronics and communication Engineering");
-            }
         }
     }
 }

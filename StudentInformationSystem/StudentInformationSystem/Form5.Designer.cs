@@ -106,11 +106,7 @@
             "1",
             "2",
             "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
+            "4"});
             this.currentsemcomboBox.Location = new System.Drawing.Point(535, 149);
             this.currentsemcomboBox.Margin = new System.Windows.Forms.Padding(2);
             this.currentsemcomboBox.Name = "currentsemcomboBox";

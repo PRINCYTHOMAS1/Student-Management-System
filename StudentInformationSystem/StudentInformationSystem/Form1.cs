@@ -17,6 +17,10 @@ namespace StudentInformationSystem
         public LoginForm()
         {
             InitializeComponent();
+            label3.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            linkLabel1.BackColor= Color.Transparent;
+            label4.BackColor=Color.Transparent;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,8 +73,11 @@ namespace StudentInformationSystem
             this.Controls.Add(lbl);
             lbl.Top = loc * 13;
             lbl.Left = loc * 42;
-            lbl.Width = 1000;
-            lbl.Text = "Enter your Email Id as your user Id!!! ";
+            lbl.BackColor = Color.Transparent;
+            lbl.ForeColor= Color.White;
+            //lbl.Font = base.Font;
+            lbl.Width = 700;
+            lbl.Text = "Enter your Email Id as your user Id ! ";
         }
     }
 }

@@ -52,7 +52,7 @@ namespace StudentInformationSystem
                 else
                     MessageBox.Show("Cannot add null values");
 
-            }catch (Exception ex) { MessageBox.Show("Cannot enter null values"); }
+            }catch (Exception) { MessageBox.Show("Cannot enter null values"); }
         }
         private void depcomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -60,7 +60,7 @@ namespace StudentInformationSystem
             if (depcomboBox.SelectedItem.ToString() == "Computer Science")
             {
                 CoursecomboBox.Items.Add("Computer Science and Engineering");
-                CoursecomboBox.Items.Add("BSC computer Science");
+                CoursecomboBox.Items.Add("IT");
             }
             if (depcomboBox.SelectedItem.ToString() == "Electronics")
             {

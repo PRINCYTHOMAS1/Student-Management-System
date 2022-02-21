@@ -46,7 +46,7 @@ namespace StudentInformationSystem
             int i= add.AddMarkServices(mark);
             if (i==0)
             {
-                string str = $"{regtextbox.Text} with semester {SemcomboBox.SelectedItem} mark already excists";
+                string str = $"{regtextbox.Text} with semester {SemcomboBox.SelectedItem} mark already exists";
                 MessageBox.Show(str);
             }
              
@@ -61,7 +61,6 @@ namespace StudentInformationSystem
             sub3textBox.Clear();
             FetchSubjectName subname=new FetchSubjectName();
             SubjectNameClass newsub=new SubjectNameClass();
-            
             if (Convert.ToInt32(SemcomboBox.SelectedItem) == 1)
             {
                 newsub=subname.GetSubjectNameByRegNo(_course,_department,1);

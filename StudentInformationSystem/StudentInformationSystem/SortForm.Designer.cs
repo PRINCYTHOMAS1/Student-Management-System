@@ -44,7 +44,7 @@
             // 
             this.Sortlabel.AutoSize = true;
             this.Sortlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sortlabel.Location = new System.Drawing.Point(297, 57);
+            this.Sortlabel.Location = new System.Drawing.Point(303, 58);
             this.Sortlabel.Name = "Sortlabel";
             this.Sortlabel.Size = new System.Drawing.Size(58, 13);
             this.Sortlabel.TabIndex = 1;
@@ -86,6 +86,11 @@
             // 
             this.sortcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortcomboBox.FormattingEnabled = true;
+            this.sortcomboBox.Items.AddRange(new object[] {
+            "Computer Science and Engineering",
+            "IT",
+            "Electronics and Communication Engineering",
+            "Electrical and Electronics Engineering"});
             this.sortcomboBox.Location = new System.Drawing.Point(367, 52);
             this.sortcomboBox.Name = "sortcomboBox";
             this.sortcomboBox.Size = new System.Drawing.Size(159, 21);
@@ -112,7 +117,6 @@
             this.depcomboBox.Name = "depcomboBox";
             this.depcomboBox.Size = new System.Drawing.Size(145, 21);
             this.depcomboBox.TabIndex = 93;
-            this.depcomboBox.SelectedIndexChanged += new System.EventHandler(this.depcomboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -141,6 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(805, 342);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label2);
