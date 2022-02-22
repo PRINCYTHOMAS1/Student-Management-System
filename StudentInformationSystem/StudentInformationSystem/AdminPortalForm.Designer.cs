@@ -294,7 +294,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(391, 32);
             this.button2.TabIndex = 91;
-            this.button2.Text = "SORT STUDENTS";
+            this.button2.Text = "VIEW ALL STUDENTS";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
