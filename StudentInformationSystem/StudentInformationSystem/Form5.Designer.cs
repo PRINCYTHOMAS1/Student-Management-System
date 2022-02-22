@@ -55,47 +55,46 @@
             // 
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(21, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(28, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 32);
+            this.label1.Size = new System.Drawing.Size(319, 39);
             this.label1.TabIndex = 8;
             this.label1.Text = " ADD STUDENT";
             // 
             // Nametxtbox
             // 
             this.Nametxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Nametxtbox.Location = new System.Drawing.Point(163, 75);
-            this.Nametxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.Nametxtbox.Location = new System.Drawing.Point(217, 92);
+            this.Nametxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Nametxtbox.Name = "Nametxtbox";
-            this.Nametxtbox.Size = new System.Drawing.Size(170, 20);
+            this.Nametxtbox.Size = new System.Drawing.Size(225, 22);
             this.Nametxtbox.TabIndex = 19;
             // 
             // passwordtxtbox
             // 
             this.passwordtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.passwordtxtbox.Location = new System.Drawing.Point(163, 109);
-            this.passwordtxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.passwordtxtbox.Location = new System.Drawing.Point(217, 134);
+            this.passwordtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordtxtbox.Name = "passwordtxtbox";
-            this.passwordtxtbox.Size = new System.Drawing.Size(170, 20);
+            this.passwordtxtbox.Size = new System.Drawing.Size(225, 22);
             this.passwordtxtbox.TabIndex = 20;
             // 
             // regnotxtbox
             // 
             this.regnotxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.regnotxtbox.Location = new System.Drawing.Point(163, 154);
-            this.regnotxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.regnotxtbox.Location = new System.Drawing.Point(217, 190);
+            this.regnotxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.regnotxtbox.Name = "regnotxtbox";
-            this.regnotxtbox.Size = new System.Drawing.Size(170, 20);
+            this.regnotxtbox.Size = new System.Drawing.Size(225, 22);
             this.regnotxtbox.TabIndex = 21;
             // 
             // emailidtxtbox
             // 
             this.emailidtxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.emailidtxtbox.Location = new System.Drawing.Point(163, 200);
-            this.emailidtxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.emailidtxtbox.Location = new System.Drawing.Point(217, 246);
+            this.emailidtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.emailidtxtbox.Name = "emailidtxtbox";
-            this.emailidtxtbox.Size = new System.Drawing.Size(170, 20);
+            this.emailidtxtbox.Size = new System.Drawing.Size(225, 22);
             this.emailidtxtbox.TabIndex = 37;
             // 
             // currentsemcomboBox
@@ -107,29 +106,29 @@
             "2",
             "3",
             "4"});
-            this.currentsemcomboBox.Location = new System.Drawing.Point(535, 149);
-            this.currentsemcomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.currentsemcomboBox.Location = new System.Drawing.Point(713, 183);
+            this.currentsemcomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.currentsemcomboBox.Name = "currentsemcomboBox";
-            this.currentsemcomboBox.Size = new System.Drawing.Size(159, 21);
+            this.currentsemcomboBox.Size = new System.Drawing.Size(211, 24);
             this.currentsemcomboBox.TabIndex = 38;
             // 
             // staffadvisortxtbox
             // 
             this.staffadvisortxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.staffadvisortxtbox.Location = new System.Drawing.Point(535, 196);
-            this.staffadvisortxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.staffadvisortxtbox.Location = new System.Drawing.Point(713, 241);
+            this.staffadvisortxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.staffadvisortxtbox.Name = "staffadvisortxtbox";
-            this.staffadvisortxtbox.Size = new System.Drawing.Size(159, 20);
+            this.staffadvisortxtbox.Size = new System.Drawing.Size(211, 22);
             this.staffadvisortxtbox.TabIndex = 41;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(503, 263);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(671, 324);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 36);
+            this.button2.Size = new System.Drawing.Size(271, 44);
             this.button2.TabIndex = 42;
             this.button2.Text = "SUBMIT";
             this.button2.UseVisualStyleBackColor = false;
@@ -140,10 +139,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 79);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(73, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 43;
             this.label2.Text = "NAME";
             // 
@@ -152,10 +150,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 155);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(8, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 16);
+            this.label3.Size = new System.Drawing.Size(186, 20);
             this.label3.TabIndex = 44;
             this.label3.Text = "REGISTER NUMBER";
             // 
@@ -164,10 +161,9 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(42, 204);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(56, 251);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 16);
+            this.label7.Size = new System.Drawing.Size(89, 20);
             this.label7.TabIndex = 45;
             this.label7.Text = "EMAIL ID";
             // 
@@ -176,10 +172,9 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 246);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(8, 303);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(129, 16);
+            this.label14.Size = new System.Drawing.Size(159, 20);
             this.label14.TabIndex = 46;
             this.label14.Text = "PHONE NUMBER";
             // 
@@ -188,10 +183,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(415, 158);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(553, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 16);
+            this.label6.Size = new System.Drawing.Size(108, 20);
             this.label6.TabIndex = 47;
             this.label6.Text = "SEMESTER";
             // 
@@ -200,10 +194,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(393, 73);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(524, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 16);
+            this.label4.Size = new System.Drawing.Size(134, 20);
             this.label4.TabIndex = 48;
             this.label4.Text = "DEPARTMENT";
             // 
@@ -212,10 +205,9 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(423, 110);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(564, 135);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(70, 16);
+            this.label15.Size = new System.Drawing.Size(86, 20);
             this.label15.TabIndex = 49;
             this.label15.Text = "COURSE";
             // 
@@ -224,20 +216,19 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(393, 201);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(524, 247);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 16);
+            this.label5.Size = new System.Drawing.Size(154, 20);
             this.label5.TabIndex = 50;
             this.label5.Text = "STAFF ADVISOR";
             // 
             // phnnotxtbox
             // 
             this.phnnotxtbox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.phnnotxtbox.Location = new System.Drawing.Point(163, 242);
-            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.phnnotxtbox.Location = new System.Drawing.Point(217, 298);
+            this.phnnotxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.phnnotxtbox.Name = "phnnotxtbox";
-            this.phnnotxtbox.Size = new System.Drawing.Size(170, 20);
+            this.phnnotxtbox.Size = new System.Drawing.Size(225, 22);
             this.phnnotxtbox.TabIndex = 51;
             // 
             // label8
@@ -245,10 +236,9 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(25, 113);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(33, 139);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 16);
+            this.label8.Size = new System.Drawing.Size(115, 20);
             this.label8.TabIndex = 52;
             this.label8.Text = "PASSWORD";
             // 
@@ -256,10 +246,10 @@
             // 
             this.CoursecomboBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.CoursecomboBox.FormattingEnabled = true;
-            this.CoursecomboBox.Location = new System.Drawing.Point(535, 105);
-            this.CoursecomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CoursecomboBox.Location = new System.Drawing.Point(713, 129);
+            this.CoursecomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CoursecomboBox.Name = "CoursecomboBox";
-            this.CoursecomboBox.Size = new System.Drawing.Size(159, 21);
+            this.CoursecomboBox.Size = new System.Drawing.Size(211, 24);
             this.CoursecomboBox.TabIndex = 53;
             // 
             // depcomboBox
@@ -269,10 +259,10 @@
             this.depcomboBox.Items.AddRange(new object[] {
             "Computer Science",
             "Electronics"});
-            this.depcomboBox.Location = new System.Drawing.Point(535, 68);
-            this.depcomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.depcomboBox.Location = new System.Drawing.Point(713, 84);
+            this.depcomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.depcomboBox.Name = "depcomboBox";
-            this.depcomboBox.Size = new System.Drawing.Size(159, 21);
+            this.depcomboBox.Size = new System.Drawing.Size(211, 24);
             this.depcomboBox.TabIndex = 54;
             this.depcomboBox.SelectedIndexChanged += new System.EventHandler(this.depcomboBox_SelectedIndexChanged);
             // 
@@ -280,9 +270,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(626, 24);
+            this.linkLabel1.Location = new System.Drawing.Point(835, 30);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(51, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(64, 20);
             this.linkLabel1.TabIndex = 55;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "HOME";
@@ -290,10 +281,10 @@
             // 
             // AddStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(740, 350);
+            this.ClientSize = new System.Drawing.Size(967, 471);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.depcomboBox);
             this.Controls.Add(this.CoursecomboBox);
@@ -316,7 +307,7 @@
             this.Controls.Add(this.Nametxtbox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddStudentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddStudentWindow";
