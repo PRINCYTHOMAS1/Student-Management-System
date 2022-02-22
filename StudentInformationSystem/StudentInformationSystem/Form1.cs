@@ -71,12 +71,10 @@ namespace StudentInformationSystem
         {
             System.Windows.Forms.Label lbl=new System.Windows.Forms.Label();
             this.Controls.Add(lbl);
-            lbl.Top = loc * 13;
-            lbl.Left = loc * 42;
+            lbl.Location = new System.Drawing.Point(420, 150);
             lbl.BackColor = Color.Transparent;
-            lbl.ForeColor= Color.White;
-            //lbl.Font = base.Font;
-            lbl.Width = 700;
+            lbl.ForeColor = Color.White;
+            lbl.Width = 250;
             lbl.Text = "Enter your Email Id as your user Id ! ";
         }
     }

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentInformationSystem.exe" size="91104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentInformationSystem.exe" size="91616">
       <assemblyIdentity name="StudentInformationSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CD8Vew/jTYS7mMN6YkSqM8BYufL65DlCjPYQD5hl874=</dsig:DigestValue>
+        <dsig:DigestValue>PI2+LSLEyJL7IcoqPg5BA8h9eHTIdhpjzG6qXUqtjc4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

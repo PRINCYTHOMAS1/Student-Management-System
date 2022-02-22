@@ -28,29 +28,32 @@ namespace StudentInformationSystem
         }
         private void viewbutton1_Click(object sender, EventArgs e)
         {
-            SortingClass sort=new SortingClass();
-            StudentDetailsModel []student=new StudentDetailsModel[100];
-            if (sortcomboBox.SelectedIndex== -1 && comboBox2.SelectedIndex== -1)
+            try
             {
-                student = sort.Sorting(depcomboBox.SelectedItem.ToString());
-                dataGridView1.DataSource = student;
-            }
-            if (depcomboBox.SelectedIndex == -1 && comboBox2.SelectedIndex == -1)
-            {
-                student = sort.Sorting(sortcomboBox.SelectedItem.ToString());
-                dataGridView1.DataSource = student;
-            }
-            if (depcomboBox.SelectedIndex == -1 && sortcomboBox.SelectedIndex == -1)
-            {
-                student = sort.Sorting(comboBox2.SelectedItem.ToString());
-                dataGridView1.DataSource = student;
-            }
-            if (depcomboBox.SelectedIndex != -1 && sortcomboBox.SelectedIndex != -1 && comboBox2.SelectedIndex!=-1)
-            {
-                int sem = Convert.ToInt32(comboBox2.SelectedItem);
-                student = sort.Sorting(depcomboBox.SelectedItem.ToString(),sortcomboBox.SelectedItem.ToString(),sem);
-                dataGridView1.DataSource = student;
-            }
+                SortingClass sort = new SortingClass();
+                StudentDetailsModel[] student = new StudentDetailsModel[100];
+                if (sortcomboBox.SelectedIndex == -1 && comboBox2.SelectedIndex == -1)
+                {
+                    student = sort.Sorting(depcomboBox.SelectedItem.ToString());
+                    dataGridView1.DataSource = student;
+                }
+                if (depcomboBox.SelectedIndex == -1 && comboBox2.SelectedIndex == -1)
+                {
+                    student = sort.Sorting(sortcomboBox.SelectedItem.ToString());
+                    dataGridView1.DataSource = student;
+                }
+                if (depcomboBox.SelectedIndex == -1 && sortcomboBox.SelectedIndex == -1)
+                {
+                    student = sort.Sorting(comboBox2.SelectedItem.ToString());
+                    dataGridView1.DataSource = student;
+                }
+                if (depcomboBox.SelectedIndex != -1 && sortcomboBox.SelectedIndex != -1 && comboBox2.SelectedIndex != -1)
+                {
+                    int sem = Convert.ToInt32(comboBox2.SelectedItem);
+                    student = sort.Sorting(depcomboBox.SelectedItem.ToString(), sortcomboBox.SelectedItem.ToString(), sem);
+                    dataGridView1.DataSource = student;
+                }
+            }catch (Exception) { MessageBox.Show("Please select any department,course or semester."); }
 
         }
     }

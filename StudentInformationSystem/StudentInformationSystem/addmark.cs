@@ -36,22 +36,26 @@ namespace StudentInformationSystem
 
         private void markbutton_Click(object sender, EventArgs e)
         {
-            AddMarks mark= new AddMarks();
-            mark.RegisterNumber = regtextbox.Text;
-            mark.semester = Convert.ToInt32(SemcomboBox.SelectedItem);
-            mark.Subject1 = Convert.ToInt32(mark1txtbox.Text);
-            mark.Subject2 = Convert.ToInt32(mark2txtbox.Text);
-            mark.Subject3 = Convert.ToInt32(mark3txtbox.Text);
-            AddMarkService add = new AddMarkService();
-            int i= add.AddMarkServices(mark);
-            if (i==0)
+            try
             {
-                string str = $"{regtextbox.Text} with semester {SemcomboBox.SelectedItem} mark already exists";
-                MessageBox.Show(str);
+                AddMarks mark = new AddMarks();
+                mark.RegisterNumber = regtextbox.Text;
+                mark.semester = Convert.ToInt32(SemcomboBox.SelectedItem);
+                mark.Subject1 = Convert.ToInt32(mark1txtbox.Text);
+                mark.Subject2 = Convert.ToInt32(mark2txtbox.Text);
+                mark.Subject3 = Convert.ToInt32(mark3txtbox.Text);
+                AddMarkService add = new AddMarkService();
+                int i = add.AddMarkServices(mark);
+                if (i == 0)
+                {
+                    string str = $"{regtextbox.Text} with semester {SemcomboBox.SelectedItem} mark already exists";
+                    MessageBox.Show(str);
+                }
+
+                if (i != 0)
+                    MessageBox.Show("marks added!");
             }
-             
-            if (i != 0)
-                MessageBox.Show("marks added!");
+            catch (Exception) { MessageBox.Show("cannot enter null values"); }
         }
 
         private void SemcomboBox_SelectedIndexChanged(object sender, EventArgs e)
